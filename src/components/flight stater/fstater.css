@@ -1,0 +1,30 @@
+.fstarter_main {
+    .tour_type {
+        list-style: none;
+        display: flex;
+        padding-left: 4rem;
+
+        .btn {
+            color: black;
+            text-decoration: none;
+            padding: 1rem;
+
+            &:hover {
+                background-color: #F2F2F2;
+            }
+        }
+
+        .inter {
+            margin-left: 1rem;
+        }
+
+        .active {
+            border-bottom: 3px solid #006CE4;
+            color: #006CE4;
+        }
+    }
+
+    .line {
+        margin: 1rem 5rem;
+    }
+}

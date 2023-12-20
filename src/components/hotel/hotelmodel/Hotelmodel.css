@@ -1,0 +1,39 @@
+/* EBF3FF 
+FEBB02
+0071C2
+*/
+
+.conatiner_nav_model {
+    display: flex;
+    align-items: baseline;
+    gap: 10rem;
+    text-transform: uppercase;
+}
+
+.container_nav_btn{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 1rem;
+     margin-right: 12rem;
+
+    
+    
+     .btn{
+        padding: 1rem 4rem;
+        background-color:#EBF3FF;
+        border: none;
+        font-size: 1rem;
+        color: #0071C2;
+     }
+}
+
+.main_model_data{
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin: 2.7rem; */
+    margin:0.5rem 2.7rem;
+    /* border: 1px solid red; */
+    height: 50rem;
+    gap:1rem;
+
+}

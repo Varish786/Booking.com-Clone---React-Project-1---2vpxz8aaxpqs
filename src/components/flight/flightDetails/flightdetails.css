@@ -1,0 +1,132 @@
+.fdetail_main {
+    margin: 2rem 5rem;
+
+
+    .fpasssub {
+        display: flex;
+        gap: 2rem;
+        margin-left: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .fsrcdstdet {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        flex-wrap: wrap;
+
+
+    }
+
+    .fotherd {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+        .ticksum {
+            border: 1px solid grey;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition-duration: 0.2s;
+           
+
+            .ftimetake {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .fsrds {
+                font-weight: 700;
+            }
+            .lis{
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+        .h1sele{
+            margin:0.5rem 0rem;
+        }
+
+        .ameties{
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .cur{
+            cursor: pointer;
+        }
+        
+        .dropdown{
+            border: 1px solid grey;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            height: fit-content;
+            justify-content: space-between;
+            transition-duration: 0.2s;
+        
+            .fsrds {
+                font-weight: 700;
+            }
+           
+        }
+    }
+}
+
+/* .dropdown{
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: fit-content;
+    justify-content: space-between;
+    transition-duration: 0.2s;
+
+    .fsrds {
+        font-weight: 700;
+    }
+   
+} */
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.2s;
+}
+
+
+.fconfbtn {
+    background: #006CE4;
+    border: none;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 8rem;
+
+    &:hover{
+        background-color: #003B95;
+    }
+}
+
+.dim{
+    font-weight: 400;
+    color: grey;
+}
+
+.fees{
+   color: green;
+   font-weight: 700;
+}

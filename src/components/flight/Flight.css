@@ -1,0 +1,33 @@
+.aside_main{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+    .card{
+        .card_nav {
+            border: 1px solid grey;
+            margin-top: 2rem;
+            width: 64rem;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.1rem;
+            
+        
+            .border_common {
+                text-decoration: none;
+                padding: 1rem 8.9rem;
+                color: black;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .aside_main{
+        justify-content: center;
+        background-color: red;
+        
+    }
+}

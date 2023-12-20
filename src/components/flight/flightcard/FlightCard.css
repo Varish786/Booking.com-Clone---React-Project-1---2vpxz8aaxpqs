@@ -1,0 +1,97 @@
+.flight_card_main {
+
+    .card_data {
+
+        display: flex;
+
+        .left_flight_data {
+            border: 1px solid grey;
+            margin-top: 2rem;
+            width: 45rem;
+            border-radius: 0.5rem 0rem 0rem 0.5rem;
+            padding: 1rem;
+    
+          .flight_one{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 11rem;
+           
+            .flight_hr {
+                display: flex;
+                justify-content: space-around;
+                gap: 5rem;
+                align-items: center;
+            }
+
+            .line_flight {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .line_hr {
+                    width: 25rem;
+                }
+            }
+
+            .flight_icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+          }
+        }
+/* --------------------------------------------------- */
+
+        .right_flight_data {
+            border: 1px solid grey;
+            margin-top: 2rem;
+            width: 19rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-radius: 0rem 0.5rem 0.5rem 0rem;
+
+            .included {
+                font-size: 0.8rem;
+            }
+
+            .price {
+                font-size: 1.5rem;
+                padding-top: 1rem;
+            }
+
+            .total {
+                font-size: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .see_flight_btn {
+                width: 100%;
+                padding: 0.7rem;
+                background-color: #ffffff;
+                border: 2px solid #006CE4;
+                color: #006CE4;
+                font-size: 1rem;
+                border-radius: 0.3rem;
+
+                &:hover {
+                    background-color: #006CE4;
+                    color: #ffffff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* @media screen and (max-width:600px) {
+    .card_data{
+        
+    }
+      
+} */

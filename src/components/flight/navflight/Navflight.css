@@ -1,0 +1,130 @@
+.nav_container {
+    background-color: rgb(245, 241, 241);
+    min-height: 10rem;
+    .nav_main {
+        display: flex;
+        gap: 3rem;
+        padding: 1rem 5rem;
+
+        .roundtrip {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            height: fit-content;
+            font-size: 1.05rem;
+
+        }
+
+        .oneway {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            height: fit-content;
+            font-size: 1.05rem;
+        }
+
+        .multicity {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            height: fit-content;
+            font-size: 1.05rem;
+        }
+
+        .selection_drive {
+
+            .selectoption {
+                border: none;
+                background-color: rgb(245, 241, 241);
+                font-size: 1rem;
+            }
+        }
+
+        .dropdown {
+
+            .box {
+                display: flex;
+                border-radius: 5px;
+                align-items: center;
+                z-index: 2;
+
+                .traveler {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    .downrow {
+                        margin-top: 0.4rem;
+                    }
+
+                    .room {
+                        font-size: 1.05rem;
+                        color: black;
+                    }
+                }
+
+
+                .inputbox {
+                    border: none;
+                    outline: none;
+                    padding: 4px;
+                    width: 18rem;
+                    height: 2.2rem;
+                    margin: 10px;
+                    font-size: 15px;
+                    color: #575757;
+                    display: flex;
+                    align-items: center;
+
+                }
+
+                .options_nav {
+                    position: absolute;
+                    top: 12rem;
+                    background-color: white;
+                    color: grey;
+                    margin-right: 1rem;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    z-index: 3;
+
+                    .optionsitem {
+                        width: 19rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 10px;
+                        padding: 0rem 1.5rem;
+
+                        .optioncounter {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+
+
+                            .optionbtn {
+                                padding: 0.5rem 1rem;
+                                border: 0.1rem solid white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkboxflight {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            height: fit-content;
+            font-size: 1.05rem;
+        }
+    }
+}
+
+
+
+.input_radio {
+    width: 1rem;
+    height: 1rem;
+}

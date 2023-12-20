@@ -1,0 +1,6 @@
+.model_ele{
+    background-color: rgba(0,0,0,0.6);
+    inset:0;
+    position: absolute;
+    z-index: 100;
+}

@@ -1,0 +1,178 @@
+.cardmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10rem;
+  
+ 
+    
+  .card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 68rem;
+    height: 21.5rem;
+    margin-top: 1rem;
+    position: relative;
+    left: 10rem;
+    top: 12rem;
+    border-radius: 1rem;
+    .cardcontainer{
+      .hotelimg{
+        display: flex;
+        justify-content: flex-start;
+        margin:1rem 1rem;
+        .image{
+           width: 15rem;
+           height: 15rem;
+           border-radius: 1rem;
+        }
+      }
+
+      .hoteldescription{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 1rem;
+        left: 16.5rem;
+        width: 50rem;
+        height: 10rem;
+        .left{
+            .hotel_name{
+              color: #006CE4;
+              text-transform:uppercase;
+              >span{
+                color: rgb(255, 123, 0);
+              }
+            }
+            .hotel_feature{
+              border: 1px solid grey;
+              width: 4.3rem;
+              text-align: center;
+              border-radius: 3px;
+            }
+            .hotel_loc{
+              color: #006CE4;
+              text-decoration:underline;
+              margin-top: 0.2rem;
+              cursor: pointer;
+            }
+            .hotel_free_service{
+              background-color: #008234;
+              color: #ffffff;
+              width: 7.5rem;
+              padding:1px;
+              text-align: center;
+              margin-top: 2rem;
+              border-radius: 3px;
+
+            }
+        }
+        .right{
+           
+
+          .reviewscore{
+               display: flex;
+               justify-content: space-around;
+            .review{
+               font-weight: 700;
+         
+            }
+            .totalreview{
+              margin-left: 1.4rem;
+              color: grey;
+            }
+
+            .rating{
+               
+               border-radius: 6px 6px 6px 0px;
+               margin-top: 4px;
+               background-color: #008234;
+               color: #ffffff;
+               height: fit-content;
+               padding: 8px;
+            }
+          }
+          .comfort{
+             font-weight: 700;
+             color: #006CE4;
+             margin-left: 4.5rem;
+             padding-top: 0.4rem;
+          }
+          .new_booking{
+              margin-top: 1rem;
+              background-color:rgb(255, 123, 0);
+              border-radius: 3px;
+              padding: 4px 4px;
+              font-weight: 700;
+             
+
+          }
+        }
+      }
+      .lowercontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 10rem;
+        left: 16.5rem;
+        width: 50rem;
+        height: 10rem;
+
+        .included_left{
+             margin-left: 1rem;
+          .day_use{
+             font-weight: 700;
+          }
+          .bed_use{
+             font-weight: 100;
+             margin-bottom: 0.5rem;
+          }
+          .breakfast{
+              color: #008234;
+          }
+          .left_rooms{
+             color: #D4111E;
+          }
+        }
+        .included_right{
+             text-align: end;
+          .dis{
+            color: #D4111E;
+          .discount{
+             text-decoration: line-through;
+          }
+        }
+          .price{
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+          .taxes{
+              font-weight: 200;
+          }
+          .availability_btn{
+            padding: 0.8rem 2rem;
+            background-color: #006CE4;
+            border: none;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* red D4111E
+dark blue 003B95
+card backgroun F0F6FF
+btn color 006CE4 
+star FFB700
+*/

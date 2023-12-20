@@ -1,0 +1,13 @@
+.common{
+    width: 20px;
+    height: 20px;
+}
+.svgcolor {
+    fill: aliceblue;
+}
+.cross{
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+

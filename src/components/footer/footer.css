@@ -1,0 +1,25 @@
+.cont_footer {
+    .strip {
+       /* width: 100vw; */
+       min-height:3rem;
+       background-color: #00224F;
+       margin-bottom: 2rem;
+       margin-top: 3rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+
+    .logos {
+         display: flex;
+         justify-content: space-evenly;
+         margin: 2rem 0rem;
+         flex-wrap: wrap;
+    }
+}

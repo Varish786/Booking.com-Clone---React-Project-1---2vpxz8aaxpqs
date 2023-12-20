@@ -1,0 +1,44 @@
+.headercontainer{
+        display: flex;
+        margin-left: 50px ;
+        margin-top: 10px;
+        gap: 1rem;
+        flex-wrap: wrap;
+    .headerprop{
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin-left: 30px;
+        max-width: auto;
+        height: 45px;
+        padding: 0px 10px;
+        text-decoration: unset;
+        color: #ffffff;
+        &:hover{
+            background-color: #1A4FA0;
+        }
+    }
+    .active{
+        border: 1px solid #ffffff;
+        background-color: #1A4FA0;
+    }
+    
+}
+
+.heading{
+     text-align: start;
+     margin-left: 80px;
+     margin-top: 40px;
+     padding-bottom: 40px;
+    .h1{
+        font-size: 50px;
+        margin: 0px 0px;
+    }
+    .h2{
+       font-size: 30px;
+       font-weight: normal;
+       margin: 0px 0px;
+    }
+}

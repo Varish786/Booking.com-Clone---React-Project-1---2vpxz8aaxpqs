@@ -1,0 +1,25 @@
+.trending_main {
+  .heading_trending{
+    padding: 2rem 4.9rem;
+    /* padding-bottom: 2rem; */
+  }
+  .trend_container {
+    padding: 0rem 4.9rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .card {
+
+      .img {
+        border-radius: 0.5rem;
+        min-width: 16rem;
+      }
+
+      .des_date {
+        font-weight: 200;
+      }
+    }
+  }
+}

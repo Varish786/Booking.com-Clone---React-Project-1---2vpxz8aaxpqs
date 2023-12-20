@@ -1,0 +1,61 @@
+.formbox{
+    text-align: center;
+    margin-top:4rem;
+    display: flex;
+    justify-content: center;
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 2rem;
+        padding: 4rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;        
+        .namebox{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            >input{
+                width: 15rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+
+        }
+        .emailbox{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            >input{
+                width: 15rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+        }
+        .passwordbox{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            >input{
+                width: 15rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+        }
+        .btn_register{
+            background-color:#003B95 ;
+            color:#ffffff;
+            border: none;
+            padding: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .label{
+            font-weight: 700;
+        }
+    }
+    .error{
+        color: red;
+    }
+ 
+}

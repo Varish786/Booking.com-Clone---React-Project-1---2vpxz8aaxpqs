@@ -1,0 +1,124 @@
+.asidemain{
+.map {
+  width: 20rem;
+  height: 12rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  .hotelcardcontainer{
+      position: absolute;
+      top: 14.5rem;
+      left: 5rem;
+   
+  }
+  .headinghotel{
+    width: 67rem;
+    height: 10rem;
+    position: absolute;
+    left: 25rem;
+    margin-top: 0.6rem;
+    .hotelfaccontainer{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    .hotelfactlity{
+       border-radius: 50px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 16rem;
+        height: 45px;
+        padding: 0px 10px;
+        border: 1px solid grey;
+        margin-top: -0.3rem;
+    }
+  }
+  }
+}
+
+#googlemap{
+  width: 20rem;
+  height: 12rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 0rem;
+  margin: 0.5rem 0rem;
+}
+
+
+.filter {
+
+  .filterby {
+    padding: 0.5rem;
+    border: 1px solid grey;
+    width: 20rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .budgetslider {
+    border: 1px solid grey;
+    width: 20rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
+    height: 15rem;
+
+    >h4 {
+      padding-bottom: 0.5rem;
+    }
+
+  }
+
+  .popular_filter {
+    border: 1px solid grey;
+    width: 20rem;
+    min-height: 15rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
+  }
+
+  .sustainability {
+    min-height: 3rem;
+    border: 1px solid grey;
+    width: 20rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
+  }
+
+  .propertyrating {
+    min-height: 3rem;
+    border: 1px solid grey;
+    width: 20rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
+    margin-bottom:2rem;
+  }
+
+}
+
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    .inputcheck {
+      /* margin: 4px 0 0; */
+      line-height: normal;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+}

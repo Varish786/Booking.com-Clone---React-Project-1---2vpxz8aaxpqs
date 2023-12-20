@@ -1,0 +1,121 @@
+.passengerdetails {
+    margin: 2rem 5rem;
+
+    .trv {
+        display: flex;
+        gap: 2rem;
+        margin-left: 1.3rem;
+    }
+
+    .plc {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+        flex-wrap: wrap-reverse;
+
+        .trvelhed {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .contactdetails {
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .contdetail {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+
+            .cont1 {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .cont2 {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+
+
+                .contnot {
+                    display: flex;
+                    gap: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .contin {
+        width: 40%;
+        height: 2rem;
+        border-radius: 0.2rem;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .bugap {
+        margin: 1.5rem 0rem;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .contint {
+            height: 2rem;
+            border-radius: 0.2rem;
+            border: 1px solid grey;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .cont3 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            min-width: 40%;
+        }
+
+    }
+
+    .btnnext {
+        background: #006CE4;
+        border: none;
+        color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        width: 8rem;
+        margin-bottom: 4rem;
+
+        &:hover {
+            background-color: #003B95;
+        }
+    }
+
+}
+
+/* 
+@media screen and (max-width:480px) {
+    .cont1 {
+        min-width: 40%;
+    }
+
+    .contin {
+      background-color: red;
+
+   
+    }
+
+
+} */

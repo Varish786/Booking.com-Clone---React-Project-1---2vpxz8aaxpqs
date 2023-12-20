@@ -1,0 +1,94 @@
+.detailcontainer {
+    .heading_room {
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 1rem;
+    }
+
+    .card_main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        .card_detail {
+            width: 17rem;
+            height: max-content;
+            border: 1px solid red;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+            position: relative;
+
+            .img_room_div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .img_room {
+                min-width: 100%;
+                max-height: 10rem;
+                border-radius: 0.5rem;
+                padding-bottom: 0.1rem;
+            }
+
+            .room {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 400;
+            }
+
+            .Rprice {
+                text-align: center;
+                font-weight: 600;
+            }
+
+            .book_now {
+                visibility: hidden;
+                display: flex;
+                justify-content: center;
+                background: #006CE4;
+                padding: 0.5rem 1rem;
+                border: none;
+                color: #ffffff;
+                border-radius: 0.2rem;
+                position: absolute;
+                top: 50%;
+                left: 27%;
+                cursor: pointer;
+
+            }
+        }
+
+        .card_detail:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+
+            .book_now {
+                visibility: visible;
+            }
+
+            .img_room,
+            .room {
+                filter: blur(1px);
+            }
+        }
+        .payd{
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            z-index: 100;
+            inset:0;
+            margin: auto auto;
+        }
+    }
+}
+
+
+@media (width<370px) {
+    .heading_room{
+        font-size: 1rem
+    }
+}
+

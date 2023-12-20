@@ -1,0 +1,158 @@
+.navmain{
+    display: flex;
+    justify-content: space-between;
+    width: 68rem;
+    padding: 1rem;
+
+    .leftmain{
+
+        .subleft1{
+            display: flex;
+             gap: 2rem;
+            .new_booking{
+               background-color:#FEBB02;
+               padding: 0.1rem 0.3rem;
+               text-align: center;
+               margin-right: 0.4rem;
+            }
+            .startcolor{
+                color: #FEBB02;
+            }
+            .airport{
+               padding: 0.1rem 0.3rem;
+               background-color: rgb(234, 218, 218);
+            }
+        }
+        .hotelname{
+          font-size: 1.5rem;
+          margin-top: 0.5rem;
+          text-transform: uppercase;
+        }
+
+        .subleft2{
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 0.3rem;
+        }
+
+        .subleft3{
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+            margin-top: 0.7rem;
+            color: green;
+        }
+    }
+
+    .rightmain{
+        
+        .subright1{
+            display: flex;
+            align-items: center;
+            gap:1.5rem;
+            color: #006CE4;
+            font-size: 1.4rem;
+
+            .btnreserve{
+                padding: 0.7rem 1.3rem;
+                background-color: #006CE4;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+
+            }
+        }
+
+        .subright2{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            color:#006CE4;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            >p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+
+
+.hotel_data_card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: minmax(95px,auto); 
+    gap: 0.7rem;
+    grid-template-areas: "box1  box1 box3  box3 box3"
+                         "box1  box1 box3  box3 box3"
+                         "box2  box2 box3  box3 box3"
+                         "box2  box2 box3  box3 box3"
+                         "box4  box5 box6  box7 box8"
+                         "box4  box5 box6  box7 box8";
+    .grid1{
+       grid-area: box1;
+       .img1{
+        width: 427.84px;
+        height: 201.2px;
+       }      
+    }
+
+    .grid2{
+        grid-area: box2;
+        .img2{
+            width: 427.84px;
+            height: 201.2px;
+        }
+    }
+
+    .grid3{
+        grid-area: box3;
+        .img3{
+            width: 647.36px;
+            height: 421.6px;
+        }
+    }
+    .grid4{
+        grid-area: box4;
+        .img4{
+            width: 208.31px;
+            height: 201.2px;
+        }
+    }
+    .grid5{
+        grid-area: box5;
+        .img5{
+            width: 208.31px;
+            height: 201.2px;
+        }
+    }
+    .grid6{
+        grid-area: box6;
+        .img6{
+            width: 208.31px;
+            height: 201.2px;
+        }
+    }
+    .grid7{
+        grid-area: box7;
+        .img7{
+            width: 208.31px;
+            height: 201.2px;
+        }
+    }
+    .grid8{
+        grid-area: box8;
+        .img8{
+            width: 208.31px;
+            height: 201.2px;
+        }
+    } 
+
+   
+
+
+}

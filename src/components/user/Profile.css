@@ -1,0 +1,68 @@
+.user_container {
+    .user_head {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .unorder {
+        /* border: 1px solid red; */
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+
+        .user {
+            font-size: 1.3rem;
+            font-weight: 100;
+        }
+    }
+
+    .detail_main {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid blue; */
+    }
+}
+
+
+.trip_head {
+    text-align: center;
+    padding: 2rem;
+}
+
+.trip_box {
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    .trip_booking {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-weight: 700;
+    }
+
+    .trip_hotel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         flex-wrap: wrap;
+    }
+   .booking_status{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     font-weight: 700;
+    .status {
+        .confirm {
+            color: green;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.aside_Main{
+    /* width: 27rem; */
+
+    .stops{
+        margin-left: 5rem;
+        padding: 1rem 0rem;
+        .stops_flight_box{
+              display: flex;
+              justify-content: space-between;
+              margin-top: 0.5rem;
+            
+            .box_stops{
+                display: flex;
+                gap: 0.5rem;
+               align-items:baseline;
+            
+
+                .stops_input{
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+    }
+    .airlines{
+        
+        .show_all{
+            color: rgb(83, 83, 222);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+    }
+
+    .flight_times{
+        .flight_outbound{
+            display: flex;
+            font-size: 1.2rem;
+                     
+         .navlink{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid rgb(185, 180, 180);
+            padding: 1.1rem;
+            color: black;
+
+            /* &:hover{
+                color: #006CE4;
+                border-bottom: 2px solid #006CE4;
+            } */
+       
+
+         }
+         
+        }
+    }
+    .departs_box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.7rem;
+        .departs_time{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            .input_departs{
+                width: 1rem;
+                height: 1rem;
+            }
+            .active{
+                color: #006CE4;
+                border-bottom: 2px solid #006CE4;
+            }
+        }
+ 
+    }
+}
+
+
+
+.times_Arrive{
+    margin-top: 1rem;
+  }
+
+
+  @media screen and (max-width:600px){
+        .aside_container{
+            display: none;
+        }
+  }

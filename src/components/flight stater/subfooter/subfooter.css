@@ -1,0 +1,25 @@
+.subfooter_main {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+    margin: 5rem 0rem;
+    flex-wrap: wrap;
+
+    .search_subf {
+        display: flex;
+        align-items: center;
+
+        .search_img {
+            max-width: 5rem;
+        }
+
+        .sub_des {
+
+            .subp {
+                font-weight: 100;
+            }
+
+        }
+    }
+}
