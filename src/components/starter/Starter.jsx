@@ -16,19 +16,19 @@ function Starter() {
 
       <section className='startercontainer'>
         <div className='box'>
-          <input type="checkbox" className='checkboxstarter' />
+          <input type="checkbox" className='checkboxstarter deadclick' />
           <label htmlFor="checkbox">I'm travelling for work</label>
         </div>
 
         <div className='box'>
-          <input type="checkbox" className='checkboxstarter' />
+          <input type="checkbox" className='checkboxstarter deadclick' />
           <label htmlFor="checkbox">I'm interester in flights</label>
         </div>
       </section>
 
       <section className='recent'>
         <h1>Your recent searches</h1>
-        <div className='recentcard'>
+        <div className='recentcard deadclick'>
           <img src={Img} alt="recent" />
           <div className='place_name'>
             <span>Mapusa</span>
@@ -82,8 +82,8 @@ function Starter() {
               <h3>Sing up and we'll send the best deals to you</h3>
             </div>
             <div className='footerbtn'>
-            <input type="text" placeholder='your email address' id="inputmail" />
-            <input type="submit" value="Subscribe" id='footerbtn'/>
+            <input type="text" placeholder='your email address' id="inputmail" className='deadclick'/>
+            <input type="submit" value="Subscribe" id='footerbtn' className='deadclick'/>
             </div>
           </div>
 

@@ -167,12 +167,12 @@ function Aside() {
 
                 <div className='checkboxmodel'>
                     <div className='firstcheckbox'>
-                        <input type="checkbox" className='checkbox' />
+                        <input type="checkbox" className='checkbox deadclick' />
                         <p>Show me holiday rentals</p>
                     </div>
 
                     <div className='firstcheckbox'>
-                        <input type="checkbox" className='checkbox' />
+                        <input type="checkbox" className='checkbox deadclick' />
                         <p>I'm travelling for work</p>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ function Asidehotel() {
           <h4>Filter By:</h4>
         </div>
 
-        <div className='budgetslider'>
+        <div className='budgetslider deadclick'>
           <h4>Your budget (per night)</h4>
           <span className='price'>&#8377; 500 - &#8377; 20000+</span>
 
@@ -39,7 +39,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Book withour credit card</p>
             </div>
             <span>18</span>
@@ -47,7 +47,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>No prepayment</p>
             </div>
             <span>30</span>
@@ -55,7 +55,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Free cancellation</p>
             </div>
             <span>32</span>
@@ -63,7 +63,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Apartment</p>
             </div>
             <span>1</span>
@@ -71,7 +71,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Hotels</p>
             </div>
             <span>30</span>
@@ -79,7 +79,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Homestays</p>
             </div>
             <span>1</span>
@@ -87,7 +87,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>5 starts</p>
             </div>
             <span>10</span>
@@ -95,7 +95,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Twin beds</p>
             </div>
             <span>16</span>
@@ -107,7 +107,7 @@ function Asidehotel() {
           <h1>Sustainability</h1>
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Travel Sustainable properties Properties taking steps to make your stay more sustainable</p>
             </div>
             <span>26</span>
@@ -121,7 +121,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>2 stars</p>
             </div>
             <span>1</span>
@@ -129,7 +129,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>3 stars</p>
             </div>
             <span>12</span>
@@ -137,7 +137,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>4 stars</p>
             </div>
             <span>8</span>
@@ -145,7 +145,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>5 stars</p>
             </div>
             <span>10</span>
@@ -153,7 +153,7 @@ function Asidehotel() {
 
           <div className='checkbox'>
             <div className='check'>
-              <input type="checkbox" className='inputcheck' />
+              <input type="checkbox" className='inputcheck deadclick' />
               <p>Unrated</p>
             </div>
             <span>1</span>

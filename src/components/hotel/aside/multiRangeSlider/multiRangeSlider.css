@@ -79,7 +79,8 @@
     border: none;
     border-radius: 50%;
     box-shadow: 0 0 1px 1px #ced4da;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: not-allowed;
     height: 18px;
     width: 18px;
     margin-top: 4px;
@@ -93,7 +94,8 @@
     border: none;
     border-radius: 50%;
     box-shadow: 0 0 1px 1px #ced4da;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: not-allowed;
     height: 18px;
     width: 18px;
     margin-top: 4px;

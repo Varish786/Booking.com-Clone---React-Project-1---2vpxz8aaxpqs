@@ -15,7 +15,7 @@ function BreadCrumbs({search}) {
   }
 
   const breadcrumb_model = [
-    <Link underline="hover" key="1" color="inherit" path="/path" onClick={handleClick}>
+    <Link underline="hover" key="1" color="inherit" path="/path" onClick={handleClick} className='deadclick'>
       Home
     </Link>,
     <Link
@@ -24,6 +24,7 @@ function BreadCrumbs({search}) {
       color="inherit"
       href="/path"
       onClick={handleClick}
+      className='deadclick'
     >
       India
     </Link>,
@@ -33,6 +34,7 @@ function BreadCrumbs({search}) {
        color="inherit"
        href="/path"
        onClick={handleClick}
+       className='deadclick'
      >
        New Delhi
      </Link>

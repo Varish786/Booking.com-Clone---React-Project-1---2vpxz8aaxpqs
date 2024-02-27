@@ -38,7 +38,7 @@ function Main({ data }) {
 
                     <div className='subleft2'>
                         <FontAwesomeIcon icon={faLocationDot} />
-                        <p>{location} <span><a href="">Show  Map</a></span></p>
+                        <p>{location} <span><a href="" className='deadclick'>Show  Map</a></span></p>
                     </div>
 
                     <div className='subleft3'>

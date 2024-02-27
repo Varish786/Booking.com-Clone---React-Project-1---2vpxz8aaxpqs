@@ -23,7 +23,7 @@ function Footermodel({data}) {
                         Powai is located around 1.9 mi away, and MIDC in Andheri is located 2.9 mi.
 
                         Rooms come with air conditioning,a mini fridge, television with cable/DTH connection, free WiFi, a wardrobe, intercom. There is an attached bathroom with running hot water and toiletries. A complimentary buffet breakfast is provided.</p>
-                    <button className='btnshowme'>Show Me More</button>
+                    <button className='btnshowme deadclick'>Show Me More</button>
                 </div>
 
                 <div className='footerright'>
