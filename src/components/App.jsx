@@ -84,7 +84,7 @@ function App() {
                     <Route path="/flights/int" element={<International />} />
                     <Route path="/flights/dom" element={<Domastic />} />
                   </Route>
-                  <Route path="flights/result_flights" element={<Flight />} />
+                  <Route path="flights/result_flights" element={<Flight />}/> 
                 </Route>
                 <Route path="/flights/result_flights/:id" element={<FlightDetails />} />
                 <Route path="/flights/result_flights/:id/travellerdetails" element={

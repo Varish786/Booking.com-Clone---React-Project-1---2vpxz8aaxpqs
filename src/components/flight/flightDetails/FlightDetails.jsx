@@ -110,7 +110,7 @@ function FlightDetails() {
             <div className={dropdown ? "dropdown" : "ticksum"}>
               <p className='fsrds'>{apiid.source}-{apiid.destination}</p>
               <div className={dropdown ? "up" : 'ftimetake'}>
-                <p>3 hour</p>
+                <p>{apiid.duration} hour</p>
 
                 <div onClick={handleSeatSelect} className='cur'>
                   {

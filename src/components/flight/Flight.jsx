@@ -16,27 +16,60 @@ function Flight() {
   const [fapidata, setfapidata] = useState([])
   const [loading, setloading] = useState(false)
   const { src, dst, date } = flocation.state
+  const [act ,setact]=useState('')
 
+
+  const Best=(data)=>{
+     let best_data=data.sort((a,b)=>{
+            return a.ticketPrice - b.ticketPrice
+     })
+     return best_data
+  }
+  const Fast=(data)=>{
+     let fast_data=data.sort((a,b)=>{
+            return a.duration - b.duration
+     })
+     return fast_data
+  }
 
   async function FlightData() {
 
     try {
       setloading(true)
       const res = await axios.get(`https://academics.newtonschool.co/api/v1/bookingportals/flight?day=${date}&search={"source":"${src}","destination":"${dst}"}`, getHeaderWithProjectId())
-      setfapidata(res.data.data.flights)
+      
+      if(act==='Cheapest'){
+        setfapidata(Best(res.data.data.flights))
+        
+      }else if(act==='Fatest'){
+        setfapidata(Fast(res.data.data.flights))
+  
+      }else{
+        setfapidata(Best(res.data.data.flights))
+        setact('Best')
+      }
+      
     } catch (err) {
-      console.log("flightapi", err)
+      alert(err.message)
+      console.log("flightapi", err.message)
     } finally {
       setloading(false)
     }
-
   }
-
-
 
   useEffect(() => {
     FlightData()
-  }, [src, dst, date])
+  }, [src, dst, date,act])
+
+//-------------------------------------------------------------------------------
+
+const handleSort=(e)=>{
+  e.preventDefault()
+  const nm=e.target.getAttribute('name')
+  setact(nm)
+
+}
+//-------------------------------------------------------------------------------
 
 
   return (
@@ -53,9 +86,9 @@ function Flight() {
         <div className='card'>
 
           <div className='card_nav'>
-            <NavLink className="border_common">Best</NavLink>
-            <NavLink className="border_common">Cheapest</NavLink>
-            <NavLink className="border_common">Fastest</NavLink>
+            <NavLink className={`border_common ${act==='Best' && 'click'}`} name='Best' onClick={handleSort} >Best</NavLink>
+            <NavLink className={`border_common ${act==='Cheapest' && 'click'}`} name='Cheapest' onClick={handleSort}>Cheapest</NavLink>
+            <NavLink className={`border_common ${act==='Fatest' && 'click'}`} name='Fatest' onClick={handleSort}>Fastest</NavLink>
           </div>
           {/* --------------------API Call------------------------------------------------ */}
           <div className='div_card'>

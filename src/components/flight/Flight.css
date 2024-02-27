@@ -58,6 +58,11 @@
                 }
 
             }
+
+            .click{
+                color: #006CE4;
+                border-bottom: 2px solid #006CE4;
+            }
         }
     }
 }
