@@ -16,8 +16,6 @@ import { createPortal } from 'react-dom'
 
 
 
-
-
 function Hotelmodel() {
 
   const [searchhide, setsearchhide] = useState(true)
@@ -52,11 +50,6 @@ function Hotelmodel() {
   }, [])
   //-------------------------------------------------------------------------------------
 
-
-
-
-
-
   return (
 
     <section className='main_container_model'>
@@ -64,7 +57,7 @@ function Hotelmodel() {
       <>
         <div className='conatiner_nav_model'>
           <BreadCrumbs search={searchhide} />
-          <p>{databyid.name}</p>
+          <p className='hotelname'>{databyid.name}</p>
         </div>
 
         <div className='container_nav_btn'>
@@ -76,14 +69,15 @@ function Hotelmodel() {
         </div>
 
         <div className='main_model_data'>
-          <Aside />
-          {/* <div> */}
+          <div className='asidemodel'>
+              <Aside />
+          </div>
+        
           {Object.entries(databyid).length > 0 && <Main data={databyid} />}
-          {/* </div> */}
         </div>
 
         <div className='footer'>
-          <Footermodel />
+          <Footermodel  data={databyid}/>
         </div>
         <Footer/>
       </>

@@ -1,5 +1,8 @@
 .fdetail_main {
     margin: 2rem 5rem;
+    @media screen and (max-width:460px) {
+        margin: 2rem 1rem;
+    }
 
 
     .fpasssub {

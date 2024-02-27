@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext} from 'react';
 import "./Main.css";
 import { faCar, faCircleQuestion, faHeart, faLocationDot, faShareNodes, faTag } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,25 +6,26 @@ import { useNavigate } from 'react-router-dom';
 import { formodel } from '../../../App';
 
 
-function Main({data}) {
-    const { isLogin, setisLogin } = useContext(formodel)
-    const navigate=useNavigate();
-   const {name,location,rating}=data;
-   const [img1,img2,img3,img4]=data.images
-   const st='★'
-   const star=(st.repeat(data.rating))
+function Main({ data }) {
+    const { isLogin} = useContext(formodel)
+    const navigate = useNavigate();
+    const { name, location, rating } = data;
+    const [img1, img2, img3, img4] = data.images
+    const st = '★'
+    const star = (st.repeat(data.rating))
 
-   function HandelReserve(){
-     const logsDetails={
-        islog:isLogin
-     }
-     navigate(`/hoteldetails/${data._id}`,{state:{logsDetails:logsDetails}})
-   }
-  
+    function HandelReserve() {
+        const logsDetails = {
+            islog: isLogin
+        }
+        navigate(`/hoteldetails/${data._id}`, { state: { logsDetails: logsDetails } })
+    }
+
 
 
     return (
         <section className='maincontainer'>
+
 
             <div className='navmain'>
 
@@ -50,8 +51,8 @@ function Main({data}) {
                 <div className='rightmain'>
 
                     <div className='subright1'>
-                        <FontAwesomeIcon icon={faHeart} />
-                        <FontAwesomeIcon icon={faShareNodes} />
+                        <FontAwesomeIcon icon={faHeart}  className='heartlogo'/>
+                        <FontAwesomeIcon icon={faShareNodes}  className='heartlogo'/>
                         <button className='btnreserve' onClick={HandelReserve}>Reserve</button>
                     </div>
 
@@ -62,8 +63,9 @@ function Main({data}) {
 
                 </div>
 
-            </div>
 
+            </div>
+        <div>
             <div className='hotel_data_card'>
 
                 <div className='grid1'>
@@ -92,10 +94,12 @@ function Main({data}) {
                 </div>
 
             </div>
+        
+        </div>
 
         </section>
 
-        
+
     )
 }
 

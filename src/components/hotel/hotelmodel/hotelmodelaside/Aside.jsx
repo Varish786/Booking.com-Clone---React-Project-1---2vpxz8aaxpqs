@@ -50,12 +50,6 @@ function Aside() {
        
      }
 
-
-
-     
-
-
-
     return (
         <section className='aside_container'>
     <ToastContainer

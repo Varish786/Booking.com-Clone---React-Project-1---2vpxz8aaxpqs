@@ -53,6 +53,7 @@ function Navflight() {
 
     function handledropdown(e){
         setdropdown(e.target.value)
+        
     }
  
     return (
@@ -61,20 +62,20 @@ function Navflight() {
             <div className='nav_main'>
                 <div className='roundtrip'>
                     <input type="radio" name='trip' className='input_radio'/>
-                    <label htmlFor='roundtrip'>Round trip</label>
+                    <label htmlFor='roundtrip' className='fullspace'>Round trip</label>
                 </div>
 
                 <div className='oneway'>
                     <input type="radio" name='trip' className='input_radio' defaultChecked/>
-                    <label htmlFor="One way">One way</label>
+                    <label htmlFor="One way" className='fullspace'>One way</label>
                 </div>
 
                 <div className='multicity'>
                     <input type="radio" name='trip' className='input_radio' />
-                    <label htmlFor="Multi-city">Multi-city</label>
+                    <label htmlFor="Multi-city" className='fullspace'>Multi-city</label>
                 </div>
 
-                <div className='selection_drive'>
+                <div className='selection_drive' onClick={() => setoptionspop(false)}>
                     <select name='triplist' className='selectoption' onChange={handledropdown}>
                         <option value="Economy">Economy</option>
                         <option value="Premium Economy">Premium Economy</option>
@@ -123,7 +124,7 @@ function Navflight() {
 
                     <input type="checkbox" className='input_radio' />
 
-                    <p>Direct Flight only</p>
+                    <p className='fullspace'>Direct Flight only</p>
                 </div>
                 
             </div>

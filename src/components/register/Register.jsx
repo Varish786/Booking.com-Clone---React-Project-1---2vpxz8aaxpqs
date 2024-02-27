@@ -4,6 +4,7 @@ import axios from 'axios';
 import { getHeaderWithProjectId } from '../utils/services';
 import { useNavigate } from 'react-router-dom';
 import { formodel } from '../App';
+import Footer from '../footer/Footer';
 
 
 function Register() {
@@ -89,7 +90,7 @@ function Register() {
         </form>
         
       </div>
-
+     <Footer/>
     </section>
   )
 }

@@ -1,20 +1,29 @@
-.checkkmain{
+.checkkmain {
     margin: 1rem 5rem;
 
-    .checkbasic{
+    @media screen and (max-width:600px) {
+        margin: 1rem;
+    }
+
+    .checkbasic {
         display: flex;
         flex-direction: column;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
         flex-wrap: wrap;
 
-        .basiclis{
+        @media screen and (max-width:600px) {
+            margin-bottom: 1rem;
+        }
+
+        .basiclis {
             display: flex;
             gap: 2rem;
             margin-left: 1.5rem;
             flex-wrap: wrap;
         }
     }
-    .ticketdetail{
+
+    .ticketdetail {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -22,33 +31,37 @@
         padding: 1rem;
         border-radius: 0.5rem;
 
-        .t1{
-            .tickttrv{
+        .t1 {
+            .tickttrv {
                 font-weight: 700;
             }
-            .fareprice,.faretax{
+
+            .fareprice,
+            .faretax {
                 display: flex;
                 max-width: 25rem;
                 flex-wrap: wrap;
                 justify-content: space-between;
-            }          
+            }
         }
-        .faretotal{
+
+        .faretotal {
             display: flex;
             max-width: 25rem;
             flex-wrap: wrap;
             justify-content: space-between;
 
         }
-        .farehidden{
-            .Nofees{
+
+        .farehidden {
+            .Nofees {
                 color: green;
-                font-weight: 700;            
+                font-weight: 700;
             }
         }
     }
 
-    .paymentdetails{
+    .paymentdetails {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -57,7 +70,7 @@
         border-radius: 0.5rem;
         margin-top: 2rem;
 
-        .payopt{
+        .payopt {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
@@ -66,55 +79,72 @@
 
 
 
-        .payment_card{
-        
+        .payment_card {
+
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            .Chname{
+
+            .Chname {
                 width: 49.6%;
-                .cinp{
+
+                @media screen and (max-width:600px) {
+                    width: unset;
+                }
+
+                .cinp {
                     width: 100%;
                     height: 2rem;
                     border-radius: 0.1rem;
-                    border:1px solid grey;
+                    border: 1px solid grey;
                 }
             }
-            .Expire_cvv{
+
+            .Expire_cvv {
                 display: flex;
                 gap: 0.5rem;
                 width: 49.6%;
                 flex-wrap: wrap;
-              
-               .ex_div{
-                display: flex;
-                flex-direction: column;
-                width: 49.38%;
-                .excvv{
-                  width:100%;
-                  height: 2rem;
-                  border-radius: 0.1rem;
-                  border:1px solid grey;
-                  
+                @media screen and (max-width:600px) {
+                    width: 100%;
                 }
-        
-               }
-               
-             
+
+                .ex_div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49.38%;
+                    
+
+                    @media screen and (max-width:600px) {
+                        width: 100%;
+                    }
+
+                    .excvv {
+                        width: 100%;
+                        height: 2rem;
+                        border-radius: 0.1rem;
+                        border: 1px solid grey;
+
+                    }
+
+                }
+
+
             }
-            .btn_pay{
+
+            .btn_pay {
                 color: #ffffff;
-                background-color:#006CE4;
+                background-color: #006CE4;
                 border: none;
                 padding: 1rem;
                 margin-top: 0.5rem;
                 cursor: pointer;
                 width: 8rem;
 
-                &:hover{
-                    background-color:#003B95;
+                &:hover {
+                    background-color: #003B95;
                 }
             }
-         }
+        }
     }
 }

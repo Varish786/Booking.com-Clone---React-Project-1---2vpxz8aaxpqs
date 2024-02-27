@@ -1,33 +1,63 @@
-.aside_main{
+.aside_main {
     display: flex;
     gap: 2rem;
     padding-bottom: 2rem;
+    justify-content: center;
 
-    .card{
+
+
+    .asidewrapper {
+        @media screen and (max-width:1350px) {
+            display: none;
+        }
+
+    }
+
+
+    .card {
+
+        .div_card {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
         .card_nav {
             border: 1px solid grey;
             margin-top: 2rem;
-            width: 64rem;
+            max-width: 64rem;
             border-radius: 0.5rem;
             display: flex;
             justify-content: space-around;
             font-size: 1.1rem;
-            
-        
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+
+
+
+
             .border_common {
                 text-decoration: none;
                 padding: 1rem 8.9rem;
                 color: black;
+
+                @media screen and (max-width:1014px) {
+                    padding: 1rem 5rem;
+                }
+
+                @media screen and (max-width:640px) {
+                    padding: 1rem 3rem;
+                }
+
+                @media screen and (max-width:448px) {
+                    padding: 1rem 2rem;
+                }
+
+                @media screen and (max-width:356px) {
+                    padding: 1rem 1rem;
+                }
+
             }
         }
-    }
-}
-
-
-@media screen and (max-width:600px) {
-    .aside_main{
-        justify-content: center;
-        background-color: red;
-        
     }
 }

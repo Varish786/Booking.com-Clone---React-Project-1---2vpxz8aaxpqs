@@ -4,8 +4,10 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 
-    .card{
+    .card{ 
+      text-align: center;
 
         .img{
           border-radius: 0.5rem;

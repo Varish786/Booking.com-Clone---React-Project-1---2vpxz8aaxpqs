@@ -19,6 +19,8 @@ import Domastic from "./flight stater/domastic/Domastic";
 import FlightDetails from "./flight/flightDetails/FlightDetails";
 import TravellerDetails from "./flight/travellerdetails/TravellerDetails";
 import Checkout from "./flight/checkout/Checkout";
+import ComingSoon from "./comingsoon/ComingSoon";
+
 
 
 export const formodel = createContext()
@@ -72,7 +74,7 @@ function App() {
             <formodel.Provider value={{ modelvisible, setmodelvisible, currency, setcurrency, listofproperty, setlistofproperty, header, setheader, signin, setsignin, register, setregister, isLogin, setisLogin }}>
               <Nav />
               <Routes>
-                <Route path="/" element={<Starter />} />
+                <Route path="/" element={<Starter/>} />    
                 <Route path="/stays" element={<HotelSearch />} />
                 <Route path="/hotelmodel/:id" element={<Hotelmodel />} />
 
@@ -107,10 +109,10 @@ function App() {
 
 
                 {/* <Route path="/hoteldetails/:id" element={<Payment/>}/> */}
-                <Route path="/flights+hotel" element={<h1>flights+hotel</h1>} />
-                <Route path="/carrentals" element={<h1>carrentals</h1>} />
-                <Route path="/attractions" element={<h1>attractions</h1>} />
-                <Route path="/airporttaxis" element={<h1>airporttaxis</h1>} />
+                <Route path="/flights+hotel" element={<ComingSoon/>} />
+                <Route path="/carrentals" element={<ComingSoon/>} />
+                <Route path="/attractions" element={<ComingSoon/>} />
+                <Route path="/airporttaxis" element={<ComingSoon/>} />
                 <Route path="*" element={<h1>Error Not Found</h1>} />
               </Routes>
 

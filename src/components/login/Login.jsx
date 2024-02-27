@@ -4,6 +4,7 @@ import { formodel } from '../App'
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { getHeaderWithProjectId } from '../utils/services';
 import axios from 'axios';
+import Footer from '../footer/Footer';
 
 function Login() {
     const { setmodelvisible, setcurrency, setlistofproperty, setheader, setsignin, setregister, setisLogin, isLogin, settitle } = useContext(formodel)
@@ -55,7 +56,6 @@ function Login() {
     }
 
 
-
     function handleSignIn(e) {
         e.preventDefault()
         const usersiDetails = {
@@ -67,7 +67,7 @@ function Login() {
             if (password) {
                 loginUser(usersiDetails)
 
-                // setsierror("")
+                
             } else {
                 setsierror("Enter Valid Password")
             }
@@ -98,7 +98,7 @@ function Login() {
                 </form>
 
             </div>
-
+            <Footer/>
         </section>
     )
 }

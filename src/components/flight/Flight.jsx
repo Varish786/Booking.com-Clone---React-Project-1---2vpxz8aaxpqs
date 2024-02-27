@@ -44,7 +44,10 @@ function Flight() {
  
 
       <div className='aside_main'>
-        <Asideflight/>
+        <div className='asidewrapper'>
+           <Asideflight/>
+        </div>
+       
 
   {loading? createPortal(<Model/>,document.getElementById('portal')) :
         <div className='card'>
@@ -55,12 +58,12 @@ function Flight() {
             <NavLink className="border_common">Fastest</NavLink>
           </div>
           {/* --------------------API Call------------------------------------------------ */}
-          <div>
+          <div className='div_card'>
           {fapidata.length>0 && fapidata.map((res)=>{
                      return <FlightCard data={res} key={res._id}/>
             })
           } 
-          {/* <FlightCard/> */}
+      
           </div>
           {/* ---------------------------------------------------------------------------- */}
         </div>

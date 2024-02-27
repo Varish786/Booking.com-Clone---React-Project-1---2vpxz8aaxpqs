@@ -1,30 +1,30 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext} from 'react';
 import "../flightsearchbar/Flightsearch.css";
-import { Takeoff, Takeon, Exchange, Calender } from "../../asserts/Icons"
+import { Takeoff, Takeon, Exchange} from "../../asserts/Icons"
 import { FlightSeatContext, flightdata } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import { ErrorToast } from "../../paymentportal/Toast"
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 
-function FlightSearchBar({ dropdown, options,setoptions }) {
+function FlightSearchBar({ dropdown, options, setoptions }) {
     const { fdata, setfdata } = useContext(flightdata)
-    const { flightcont, EditMovies } = useContext(FlightSeatContext)
+    // const { flightcont, EditMovies } = useContext(FlightSeatContext)
     const navigate = useNavigate()
 
 
 
     //----------------------------state mention------------------------------------------
-    function handleInput(e){
-        setfdata((prev)=>({...prev,[e.target.name]:e.target.value}))
+    function handleInput(e) {
+        setfdata((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
     //-------------------------------------------------------------------------------------
 
     function handleSearchFlight() {
 
-        const { src, dst,jsdate } = fdata;
+        const { src, dst, jsdate } = fdata;
         if (src) {
             if (dst) {
                 if (jsdate) {
@@ -41,10 +41,10 @@ function FlightSearchBar({ dropdown, options,setoptions }) {
                         dst
                     }
 
-                    setfdata((prev)=>{return {...prev, date: checkdate, class: dropdown, traveller: options}})
-                   
+                    setfdata((prev) => { return { ...prev, date: checkdate, class: dropdown, traveller: options } })
+
                     navigate("flights/result_flights", { state: userfdetails })
-                    
+
 
                 } else {
                     ErrorToast("Enter date of Flight")
@@ -59,18 +59,16 @@ function FlightSearchBar({ dropdown, options,setoptions }) {
     }
     //-----------------------------------------------------------------------
     function handelSwap() {
-        setfdata((prev)=>{
-            const {src,dst}=prev;
-            return{
+        setfdata((prev) => {
+            const { src, dst } = prev;
+            return {
                 ...prev,
-                src:dst,
-                dst:src
+                src: dst,
+                dst: src
             }
         })
     }
-    
-    // console.log("fdata",fdata)
-    // console.log("fdata",fdata.jsdate)
+
 
 
     return (
@@ -93,7 +91,8 @@ function FlightSearchBar({ dropdown, options,setoptions }) {
 
                 <div className='from'>
                     <Takeoff />
-                    <input type="text" className='inputfrom' placeholder='Where from ?'  onChange={handleInput} name="src" value={fdata ? fdata.src : ""}/>    
+                    <input type="text" className='inputfrom' placeholder='Where from ?' onChange={handleInput} name="src" value={fdata ? fdata.src : ""}/>
+               
                 </div>
 
                 <div className='exchangebtn' onClick={handelSwap}>
@@ -102,12 +101,12 @@ function FlightSearchBar({ dropdown, options,setoptions }) {
 
                 <div className='to'>
                     <Takeon />
-                    <input type="text" placeholder='Where to ?' className='inputto'  onChange={handleInput} name="dst" value={fdata ? fdata.dst : ""}/>
+                    <input type="text" placeholder='Where to ?' className='inputto' onChange={handleInput} name="dst" value={fdata ? fdata.dst : ""} />
                 </div>
 
                 <div className='datebox'>
                     {/* <Calender width="25px" height="25px" /> */}
-                    <input type="date" className="input-field  date"  onChange={handleInput} name="jsdate" value={fdata ? fdata.jsdate : ""}/>
+                    <input type="date" className="input-field  date" onChange={handleInput} name="jsdate" value={fdata ? fdata.jsdate : ""} />
 
                 </div>
 

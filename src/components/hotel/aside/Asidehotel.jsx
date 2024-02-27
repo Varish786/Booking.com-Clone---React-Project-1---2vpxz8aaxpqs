@@ -2,65 +2,17 @@ import React from 'react'
 import "./Asidehotel.css"
 import GoogleMap from './googlemap/GoogleMap'
 import MultiRangeSlider from './multiRangeSlider/MultiRangeSlider'
-// import Hotelcard from '../hotelcard/Hotelcard'
 
 
-function Asidehotel({data,loc}) {
 
-  const hotel=data.length;
-
-  const freecancel=data.filter((res)=>{
-    return res.rooms.map((cancel)=>{
-       return cancel.cancellationPolicy!==null
-    })
-  })
-
-  
-
+function Asidehotel() {
 
   return (
     <section className='asidemain'>
       <div className='map'>
-        <GoogleMap />
-        <div className='headinghotel'>
-          <h1>{loc}:{hotel} properties Found</h1>
-
-          <div className='hotelfaccontainer'>
-
-            <div className='hotelfactlity'>
-              <p>Sort by:Top picks for long stays</p>
-            </div>
-
-            <div className='hotelfactlity'>
-              <p>Free cancellation({freecancel.length})</p>
-            </div>
-           
-            <div className='hotelfactlity'>
-              <p>Hotels({hotel})</p>
-            </div>
-
-            <div className='hotelfactlity'>
-              <p>Breakfast included(26)</p>
-            </div>
-
-            <div className='hotelfactlity'>
-              <p>Very good:8+(11)</p>
-            </div>
-
-            <div className='hotelfactlity'>
-              <p>Apartments(1)</p>
-            </div>
-
-          </div>
+        <div className='ggmap'>
+          <GoogleMap/>
         </div>
-
-        {/* <div className="hotelcardcontainer"> */}
-          {/* --------------------------------------Mapping Data---------------------------------------------------- */}
-          {/* <div className='eachcard'>
-            <Hotelcard />
-          </div> */}
-          {/* ------------------------------------------------------------------------------------------------------ */}
-        {/* </div> */}
 
       </div>
 
@@ -77,7 +29,7 @@ function Asidehotel({data,loc}) {
             className="slider"
             min={0}
             max={1000}
-            onChange={({ min, max }) => console.log("min = ${min}, max = ${max}")}
+            onChange={({ min, max }) => console.log("Asidehotel  min = ${min}, max = ${max}")}
           />
         </div>
 

@@ -19,7 +19,7 @@ export function Nav() {
     const [user, setuser] = useState({});
     const [search_active, setsearch_active] = useState(false);
 
-    const { options,setoptions, location,setlocation ,date,setdate} = useContext(hoteldata);
+    const { options, setoptions, location, setlocation, date, setdate } = useContext(hoteldata);
     const { modelvisible, setmodelvisible, currency, listofproperty, setcurrency, setlistofproperty, header, setheader, signin, setsignin, register, setregister, isLogin, setisLogin } = useContext(formodel)
     useEffect(() => {
         if (sessionStorage.getItem("user")) {
@@ -121,7 +121,7 @@ export function Nav() {
         sessionStorage.setItem("isLogin", JSON.stringify(isLogin))
     }, [isLogin])
 
-  
+
     //------------------------------------------------------------------------------------------------------------
     useEffect(() => {
         const saved_options = window.sessionStorage.getItem("options");
@@ -129,7 +129,7 @@ export function Nav() {
         const saved_date = window.sessionStorage.getItem("date");
         if (saved_options != null) setoptions(JSON.parse(saved_options))
         if (saved_location != null) setlocation(JSON.parse(saved_location))
-        if (saved_date != null) setdate([{startDate:new Date(JSON.parse(saved_date)[0].startDate),endDate:new Date(JSON.parse(saved_date)[0].endDate)}])
+        if (saved_date != null) setdate([{ startDate: new Date(JSON.parse(saved_date)[0].startDate), endDate: new Date(JSON.parse(saved_date)[0].endDate) }])
     }, [])
 
 
@@ -137,7 +137,7 @@ export function Nav() {
         window.sessionStorage.setItem("options", JSON.stringify(options))
         window.sessionStorage.setItem("location", JSON.stringify(location))
         window.sessionStorage.setItem("date", JSON.stringify(date))
-    }, [options,location,date])
+    }, [options, location, date])
     //------------------------------------------------------------------------------------------------------------
 
     function handleSignin() {
@@ -195,7 +195,7 @@ export function Nav() {
         setuser({})
 
     }
-    function Common(trans){
+    function Common(trans) {
         setmodelvisible(false)
         setheader(true)
         setlistofproperty(false)
@@ -216,7 +216,10 @@ export function Nav() {
         <div className='main'>
 
             <div className='navcontainer'>
-                <h1 className='leftnav' onClick={handleBookingcom}>Booking.com</h1>
+                <div className='leftnav' onClick={handleBookingcom}>
+                    <h1 className='logo'>Booking.com</h1>
+                </div>
+
                 <div className='rightnav'>
 
                     {currency && <p className='currency'>&#8377;</p>}
@@ -231,8 +234,8 @@ export function Nav() {
                     {isLogin ?
                         <div>
                             <div className='user_icon' onClick={handleUser}>
-                            <FontAwesomeIcon icon={faUser} />
-                            <p className='name_user'>{user.name}</p>
+                                <FontAwesomeIcon icon={faUser} />
+                                <p className='name_user'>{user.name}</p>
                             </div>
                             {
                                 logout_model &&
@@ -246,8 +249,8 @@ export function Nav() {
                         </div>
                         :
                         <div className='btnnav'>
-                            {register && <button onClick={handleRegister}>Register</button>}
-                            {signin && <button onClick={handleSignin}>Sign in</button>}
+                            {register && <button onClick={handleRegister} className='btnstyle'>Register</button>}
+                            {signin && <button onClick={handleSignin} className='btnstyle'>Sign in</button>}
                         </div>
 
                     }

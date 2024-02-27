@@ -44,6 +44,10 @@
         justify-content: space-between;
         align-items: flex-start;
         font-weight: 700;
+        flex-wrap: wrap;
+        @media screen and (max-width:335px) {
+            font-size: 0.8rem;
+        }
     }
 
     .trip_hotel {
@@ -51,12 +55,18 @@
         flex-direction: column;
         align-items: center;
          flex-wrap: wrap;
+         @media screen and (max-width:335px) {
+            font-size: 0.87rem;
+        }
     }
    .booking_status{
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
      font-weight: 700;
+     @media screen and (max-width:335px) {
+        font-size: 0.8rem;
+    }
     .status {
         .confirm {
             color: green;

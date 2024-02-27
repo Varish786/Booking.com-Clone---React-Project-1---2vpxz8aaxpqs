@@ -5,7 +5,8 @@
     border: none;
     text-align: start;
     padding: 1.5rem;
-
+    
+  
     .searchbar {
         font-size: x-large;
     }
@@ -37,7 +38,6 @@
             }
         }
 
-      
       .input_aside_datestart{
         background-color: white;
         padding: 0.3rem;
@@ -55,9 +55,7 @@
             
         }
       }
-
     }
-
     .checkboxmodel {
 
         .firstcheckbox {
@@ -83,12 +81,7 @@
         width: 17rem;
         border: none;
     }
-
-    
-
 }
-
-
 
 .box {
     display: flex;
@@ -101,7 +94,7 @@
         border: none;
         outline: none;
         padding: 4px;
-        width: 18rem;
+        max-width: 18rem;
         height: 2.2rem;
         margin: 10px;
         font-size: 15px;  

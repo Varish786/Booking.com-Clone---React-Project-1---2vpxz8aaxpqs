@@ -1,10 +1,20 @@
 .footermain{
     display: flex;
     gap: 10rem;
+    
+    @media only screen and (max-width:605px){
+      flex-wrap: wrap;
+      gap:unset;
+      justify-content: center;
+    }
 
     .footerleft{
       width: 65%;
       padding: 3rem;
+      @media only screen and (max-width:605px){
+          width: initial;
+          padding: 0rem 1rem;
+      }
        .btnshowme{
            border: 1px solid #006CE4;
            width: 100%;
@@ -28,11 +38,16 @@
       margin-top: 3rem;
       padding: 1rem;
       background-color: #e0efff;
+      @media only screen and (max-width:605px){
+     
+        margin: 1rem 1rem 0rem 1rem;
+    }
         .btnreserve{
            padding:0.5rem;
            background-color: #006CE4;
            color: #ffffff;
            border: none;
+           cursor: pointer;
         }
     }
 }

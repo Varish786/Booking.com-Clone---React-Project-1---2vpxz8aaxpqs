@@ -7,30 +7,22 @@ import "../hotel/HotelSearch.css";
 import axios from "axios";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { formodel, hoteldata } from '../App';
-import { getHeaderWithProjectId } from '../utils/services';
 import Model from '../model/Model';
 import { createPortal } from 'react-dom'
-import Footer from '../footer/Footer';
-
-
-
 
 
 function HotelSearch() {
-  // const location=useLocation();
-  // console.log(location.pathname);   to get the URL data
+
   const { options, setoptions, location, setlocation, date, setdate } = useContext(hoteldata)
 
   const [hoteldata_api, sethoteldata_api] = useState([]);
   const [loading, setloading] = useState(false);
-  const navigate = useNavigate();
-  const loc=useLocation()
-  
+  const loc = useLocation()
+
 
 
   //----------------------Hotel API Call-----------------------
   async function Hotel_Data_Api_Call(place) {
-    // const token = sessionStorage.getItem('userToken')
     const config = {
       headers: {
         projectID: "2vpxz8aaxpqs",
@@ -52,39 +44,78 @@ function HotelSearch() {
 
   useEffect(() => {
     Hotel_Data_Api_Call(loc.state)
-    
-  }, [loc.state])
-  
 
- 
+  }, [loc.state])
+
+  
+  const freecancel=hoteldata_api.filter((res)=>{
+    return res.rooms.map((cancel)=>{
+       return cancel.cancellationPolicy!==null
+    })
+  })
+
+
   //-----------------------------------------------------------
 
 
-
-
   return (
-    <section className='hotel_search_container'>
+    <section >
       <BreadCrumbs />
 
-      <Asidehotel data={hoteldata_api} loc={loc.state}/>
+    <section className='hotel_search_container'>
+      <div className='asidewraper'>
+         <Asidehotel/>
+      </div>
 
       <div className='cardcontainer'>
-        {loading? createPortal(<Model/>,document.getElementById('portal')) :
-        
-        <div className='eachcard'>
-        {
-          hoteldata_api.length > 0 && hoteldata_api.map((res_data) => {
-                return  <Hotelcard data={res_data} key={res_data._id} />
-          })
+        {loading ? createPortal(<Model />, document.getElementById('portal')) :
+
+
+          <>
+           {hoteldata_api.length>0 && <div className='headinghotel'>
+              <h1>{loc.state}:{hoteldata_api.length} properties Found</h1>
+
+              <div className='hotelfaccontainer'>
+
+                <div className='hotelfactlity'>
+                  <p>Sort by:Top picks for long stays</p>
+                </div>
+
+                <div className='hotelfactlity'>
+                  <p>Free cancellation({freecancel.length})</p>
+                </div>
+
+                <div className='hotelfactlity'>
+                  <p>Hotels({hoteldata_api.length})</p>
+                </div>
+
+                <div className='hotelfactlity'>
+                  <p>Breakfast included(26)</p>
+                </div>
+
+                <div className='hotelfactlity'>
+                  <p>Very good:8+(11)</p>
+                </div>
+
+                <div className='hotelfactlity'>
+                  <p>Apartments(1)</p>
+                </div>
+
+              </div>
+            </div>
+           }
+          <div className='eachcard'>
+            {
+              hoteldata_api.length > 0 && hoteldata_api.map((res_data) => {
+                return <Hotelcard data={res_data} key={res_data._id} />
+              })
+            }
+          </div>
+          </>
         }
-        </div>
-
-         }
-
-        
       </div>
-     
-      
+    </section>
+
     </section>
   )
 }

@@ -74,7 +74,7 @@ function header({settitle,search_active, setsearch_active}) {
 
         <NavLink className='headerprop' to="/carrentals" onClick={handlecarrentals}>
           <CarRentals />
-          <p>Car rentals</p>
+          <p className='car'>Car rentals</p>
         </NavLink>
 
         <NavLink className='headerprop' to="/attractions" onClick={handleattractions}>
@@ -84,7 +84,7 @@ function header({settitle,search_active, setsearch_active}) {
 
         <NavLink className='headerprop' to="/airporttaxis" onClick={handleairpottaxis}>
           <AirportTaxi />
-          <p>Airport taxis</p>
+          <p className='car'>Airport taxis</p>
         </NavLink>
 
       </div>

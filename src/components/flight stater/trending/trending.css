@@ -2,6 +2,9 @@
   .heading_trending{
     padding: 2rem 4.9rem;
     /* padding-bottom: 2rem; */
+    @media only screen and (max-width:600px){
+       padding: 0rem 2rem 2rem 2rem;
+   }
   }
   .trend_container {
     padding: 0rem 4.9rem;
@@ -9,9 +12,13 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    @media only screen and (max-width:600px){
+      padding: initial;
+      justify-content: center;
+   }
 
     .card {
-
+        text-align: center;
       .img {
         border-radius: 0.5rem;
         min-width: 16rem;

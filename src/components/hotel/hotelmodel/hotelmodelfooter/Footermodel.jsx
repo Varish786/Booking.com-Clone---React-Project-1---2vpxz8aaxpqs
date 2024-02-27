@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Footermodel.css";
+import { useNavigate } from 'react-router-dom';
+import { formodel } from '../../../App';
 
-function Footermodel() {
+function Footermodel({data}) {
+    const navigate=useNavigate()
+    const { isLogin} = useContext(formodel)
+    function HandelReserve() {
+        const logsDetails = {
+            islog: isLogin
+        }
+        navigate(`/hoteldetails/${data._id}`, { state: { logsDetails: logsDetails } })
+    }
     return (
         <section>
             <div className='footermain'>
@@ -21,7 +31,7 @@ function Footermodel() {
                     <h4>Breakfast info</h4>
                     <p>Continental,Vegetarian, American</p>
                     <p>Free private packing available at the hotel</p>
-                    <button className='btnreserve'>Reserve</button>
+                    <button className='btnreserve' onClick={HandelReserve}>Reserve</button>
                 </div>
 
             </div>

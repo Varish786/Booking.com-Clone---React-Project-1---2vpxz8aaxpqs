@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ErrorToast, SuccessToast } from '../../paymentportal/Toast';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Footer from '../../footer/Footer';
 
 function Checkout() {
   const navigate=useNavigate();
@@ -223,6 +224,7 @@ function Checkout() {
 
 
       </main>
+      <Footer/>
     </section>
   )
 }

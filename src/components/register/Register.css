@@ -1,19 +1,27 @@
 .formbox{
     text-align: center;
-    margin-top:4rem;
     display: flex;
     justify-content: center;
+    margin: 2rem 0.5rem;
     .form{
         display: flex;
         flex-direction: column;
         width: fit-content;
         gap: 2rem;
         padding: 4rem;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;        
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        @media screen and (max-width:471px) {
+            padding: 1rem;
+        }        
         .namebox{
             display: flex;
             justify-content: space-between;
             gap: 1rem;
+            flex-wrap: wrap;
+            @media screen and (max-width:369px) {
+                
+                gap: 0.5rem;
+            }  
             >input{
                 width: 15rem;
                 height: 2rem;
@@ -25,6 +33,10 @@
             display: flex;
             justify-content: space-between;
             gap: 1rem;
+            flex-wrap: wrap;
+            @media screen and (max-width:369px) {
+                gap: 0.5rem;
+            }  
             >input{
                 width: 15rem;
                 height: 2rem;
@@ -35,6 +47,10 @@
             display: flex;
             justify-content: space-between;
             gap: 1rem;
+            flex-wrap: wrap;
+            @media screen and (max-width:369px) {
+                gap: 0.5rem;
+            }  
             >input{
                 width: 15rem;
                 height: 2rem;

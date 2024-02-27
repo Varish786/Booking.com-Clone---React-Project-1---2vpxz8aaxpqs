@@ -1,15 +1,40 @@
-.hotel_search_container{
-    position: relative;
-.cardcontainer{
-    padding-bottom: 8rem;
-    
-    .eachcard{
-        position: absolute;
-        top: 0rem;
-        left: 5rem;
-        margin-bottom: 3rem;
-        z-index: 1;
-        
+.hotel_search_container {
+    display: flex;
+    gap: 2rem;
+
+    .asidewraper {
+        @media only screen and (max-width:1311px) {
+            display: none;
+        }
     }
-  }
+
+    .cardcontainer {
+        padding: 0rem 1rem;
+        padding-bottom: 1rem;
+
+        .headinghotel {
+            max-width: 67rem;
+            margin-top: 0.6rem;
+
+            .hotelfaccontainer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                .hotelfactlity {
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 16rem;
+                    height: 45px;
+                    padding: 0px 10px;
+                    border: 1px solid grey;
+                    margin-top: -0.3rem;
+                }
+            }
+        }
+
+    }
 }

@@ -1,5 +1,8 @@
 .passengerdetails {
     margin: 2rem 5rem;
+    @media screen and (max-width:460px) {
+        margin: 2rem 1rem;
+    }
 
     .trv {
         display: flex;
@@ -59,6 +62,9 @@
         border: 1px solid grey;
         box-sizing: border-box;
         overflow: auto;
+        @media screen and (max-width:546px) {
+           width: initial;
+        }
     }
 
     .bugap {
@@ -83,6 +89,9 @@
             flex-direction: column;
             gap: 0.3rem;
             min-width: 40%;
+            @media screen and (max-width:546px) {
+                width: 100%
+             }
         }
 
     }
@@ -96,7 +105,7 @@
         font-size: 0.9rem;
         cursor: pointer;
         width: 8rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
 
         &:hover {
             background-color: #003B95;

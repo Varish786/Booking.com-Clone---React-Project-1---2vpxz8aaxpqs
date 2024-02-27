@@ -6,11 +6,23 @@
     .navcontainer {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
 
         .leftnav {
-            margin: 20px 0px 0px 100px;
+            margin: 20px 0px 0px 80px;
             cursor: pointer;
+
+            @media only screen and (max-width:925px){
+                margin: 20px 0px 0px 10px;
+            }
+
+            .logo{
+                @media only screen and (max-width:413px){
+                    font-size: 1.6rem;
+                }
+                @media only screen and (max-width:314px){
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         .rightnav {
@@ -20,12 +32,20 @@
             margin-right: 100px;
             margin-top: 15px;
             gap: 38px;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+
+            @media only screen and (max-width:925px){
+                margin-right: 0px;
+                gap: 0px;
+            }
 
             .currency {
                 font-size: 20px;
                 font-weight: 700;
                 cursor: pointer;
+                @media only screen and (max-width:925px){
+                    display: none;
+                }
             }
 
             .flag img {
@@ -33,6 +53,9 @@
                 height: 27px;
                 cursor: pointer;
                 margin-top: 5px;
+                @media only screen and (max-width:925px){
+                    display: none;
+                }
             }
 
             .ques {
@@ -43,15 +66,21 @@
                 font-size: 17px;
                 font-weight: bolder;
                 text-align: center;
-
                 cursor: pointer;
+                @media only screen and (max-width:925px){
+                    display: none;
+                }
             }
 
             .listupro {
                 font-weight: normal;
+                @media only screen and (max-width:925px){
+                    display: none;
+                }
             }
+            .btnnav{
 
-            .btnnav button {
+            .btnstyle{
                 background: #ffffff;
                 padding: 9px;
                 border-radius: 5px;
@@ -59,7 +88,14 @@
                 font-weight: bolder;
                 margin: 5px;
                 cursor: pointer;
+
+                @media only screen and (max-width:413px){
+                    font-weight:unset;
+                    padding: 5.5px;
+
+                }
             }
+          }
 
             .user_model {
                 position: absolute;
