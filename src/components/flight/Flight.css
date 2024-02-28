@@ -3,11 +3,14 @@
     gap: 2rem;
     padding-bottom: 2rem;
     justify-content: center;
+    @media only screen and (max-width:370px) {
+        gap: unset;
+    }
 
 
 
     .asidewrapper {
-        @media screen and (max-width:1350px) {
+        @media only screen and (max-width:1350px) {
             display: none;
         }
 

@@ -86,10 +86,12 @@
         justify-content: space-evenly;
         align-items: center;
         z-index: 2;
-        @media only screen and (max-width:361px){
+    
+        @media only screen and (max-width:1031px){
             width: 100%;
         }
-        @media only screen and (max-width:1031px){
+
+        @media only screen and (max-width:370px){
             width: 100%;
         }
        
