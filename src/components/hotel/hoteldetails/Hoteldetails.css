@@ -37,7 +37,7 @@
 
             .room {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-between !important;
                 font-weight: 400;
             }
 
