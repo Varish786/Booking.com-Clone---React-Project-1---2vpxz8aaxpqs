@@ -8,7 +8,7 @@ function Asideflight() {
   return (
     <section className='aside_container'>
 
-      <div className='aside_Main'>
+      <div className='aside_Main' title='Coming Soon'>
         <div className='heading'>
           <h4 className='heading_filter'>Filters</h4>
           <p className='total_results'>Showing 609 results</p>
@@ -18,7 +18,7 @@ function Asideflight() {
           <h4 className='heading_stops'>Stops</h4>
           <div className='stops_flight_box'>
             <div className='box_stops'>
-              <input type="radio" className='stops_input deadclick' name='stops' />
+              <input type="radio" className='stops_input deadclick' name='stops' disabled/>
               <p>Any <br /><span>From INR24,988.34</span></p>
             </div>
             <p>609</p>
@@ -26,7 +26,7 @@ function Asideflight() {
 
           <div className='stops_flight_box'>
             <div className='box_stops'>
-              <input type="radio" className='stops_input deadclick' name='stops' />
+              <input type="radio" className='stops_input deadclick' name='stops' disabled/>
               <p>Direct only <br /><span>From INR42,988.34</span></p>
             </div>
             <p>25</p>
@@ -35,7 +35,7 @@ function Asideflight() {
 
           <div className='stops_flight_box'>
             <div className='box_stops'>
-              <input type="radio" className='stops_input deadclick' name='stops' />
+              <input type="radio" className='stops_input deadclick' name='stops' disabled/>
               <p>1 stop max <br /><span>From INR31,988.34</span></p>
             </div>
             <p>443</p>
@@ -49,7 +49,7 @@ function Asideflight() {
 
             <div className='stops_flight_box'>
               <div className='box_stops'>
-                <input type="checkbox" className='stops_input deadclick' name='stops' />
+                <input type="checkbox" className='stops_input deadclick' name='stops' disabled/>
                 <p>Air Arbia</p>
               </div>
               <p>34</p>
@@ -57,7 +57,7 @@ function Asideflight() {
 
             <div className='stops_flight_box'>
               <div className='box_stops'>
-                <input type="checkbox" className='stops_input deadclick' name='stops' />
+                <input type="checkbox" className='stops_input deadclick' name='stops' disabled/>
                 <p>Air Arbia AbuDhabi</p>
               </div>
               <p>124</p>
@@ -65,7 +65,7 @@ function Asideflight() {
 
             <div className='stops_flight_box'>
               <div className='box_stops'>
-                <input type="checkbox" className='stops_input deadclick' name='stops' />
+                <input type="checkbox" className='stops_input deadclick' name='stops' disabled/>
                 <p>Air India</p>
               </div>
               <p>60</p>
@@ -73,7 +73,7 @@ function Asideflight() {
 
             <div className='stops_flight_box'>
               <div className='box_stops'>
-                <input type="checkbox" className='stops_input deadclick' name='stops' />
+                <input type="checkbox" className='stops_input deadclick' name='stops' disabled/>
                 <p>Egyptair</p>
               </div>
               <p>1</p>
@@ -81,7 +81,7 @@ function Asideflight() {
 
             <div className='stops_flight_box'>
               <div className='box_stops'>
-                <input type="checkbox" className='stops_input deadclick' name='stops' />
+                <input type="checkbox" className='stops_input deadclick' name='stops' disabled/>
                 <p>Etihad Airways</p>
               </div>
               <p>338</p>
@@ -89,7 +89,7 @@ function Asideflight() {
             <p className='show_all'>Show all</p>
           </div>
         </div>
-
+disabled
 
         <div className='flight_times'>
           <div className='stops'>
@@ -158,7 +158,7 @@ function Asideflight() {
 
               <div className='departs_box'>
                 <div className='departs_time'>
-                  <input type="checkbox" className='input_departs deadclick'/>
+                  <input type="checkbox" className='input_departs deadclick' disabled/>
                   <p>00:00-05:59</p>
                 </div>
                 <p>59</p>
@@ -166,7 +166,7 @@ function Asideflight() {
 
               <div className='departs_box'>
                 <div className='departs_time'>
-                  <input type="checkbox" className='input_departs deadclick'/>
+                  <input type="checkbox" className='input_departs deadclick' disabled/>
                   <p>00:00-05:59</p>
                 </div>
                 <p>59</p>
@@ -174,7 +174,7 @@ function Asideflight() {
 
               <div className='departs_box'>
                 <div className='departs_time'>
-                  <input type="checkbox" className='input_departs deadclick'/>
+                  <input type="checkbox" className='input_departs deadclick' disabled/>
                   <p>00:00-05:59</p>
                 </div>
                 <p>59</p>
@@ -182,7 +182,7 @@ function Asideflight() {
 
               <div className='departs_box'>
                 <div className='departs_time'>
-                  <input type="checkbox" className='input_departs deadclick'/>
+                  <input type="checkbox" className='input_departs deadclick' disabled/>
                   <p>00:00-05:59</p>
                 </div>
                 <p>59</p>

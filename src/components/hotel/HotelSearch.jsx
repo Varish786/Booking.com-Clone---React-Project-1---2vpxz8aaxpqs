@@ -75,7 +75,7 @@ function HotelSearch() {
            {hoteldata_api.length>0 && <div className='headinghotel'>
               <h1>{loc.state}:{hoteldata_api.length} properties Found</h1>
 
-              <div className='hotelfaccontainer deadclick'>
+              <div className='hotelfaccontainer deadclick' title='Coming Soon'>
 
                 <div className='hotelfactlity'>
                   <p>Sort by:Top picks for long stays</p>

@@ -15,18 +15,18 @@ function Starter() {
           
 
       <section className='startercontainer'>
-        <div className='box'>
-          <input type="checkbox" className='checkboxstarter deadclick' />
+        <div className='box' title='Coming Soon'>
+          <input type="checkbox" className='checkboxstarter deadclick'  disabled/>
           <label htmlFor="checkbox">I'm travelling for work</label>
         </div>
 
-        <div className='box'>
-          <input type="checkbox" className='checkboxstarter deadclick' />
+        <div className='box' title='Coming Soon'>
+          <input type="checkbox" className='checkboxstarter deadclick' disabled/>
           <label htmlFor="checkbox">I'm interester in flights</label>
         </div>
       </section>
 
-      <section className='recent'>
+      <section className='recent' title='Coming Soon'>
         <h1>Your recent searches</h1>
         <div className='recentcard deadclick'>
           <img src={Img} alt="recent" />
@@ -41,13 +41,13 @@ function Starter() {
         <h1 className='trending'>Trending destinations</h1>
       </div>
 
-      <section className='journey_card'>
+      <section className='journey_card deadclick' title='Coming Soon'>
         <div className='box_card'>
           <img src={Img1} alt="Img1" />
           <h1>New Delhi</h1>
         </div>
 
-        <div className='box_card'>
+        <div className='box_card deadclick' title='Coming Soon'>
           <img src={Img2} alt="Img2" />
           <h1>Bangalore</h1>
         </div>
@@ -56,17 +56,17 @@ function Starter() {
 
       <section className='trending_second'>
 
-        <div className='box_card2'>
+        <div className='box_card2 deadclick' title='Coming Soon'>
           <img src={Img3} alt="Img3" />
           <h1>Mumbai</h1>
         </div>
 
-        <div className='box_card2'>
+        <div className='box_card2 deadclick' title='Coming Soon'>
           <img src={Img4} alt="Img4" />
           <h1>Chennai</h1>
         </div>
 
-        <div className='box_card2'>
+        <div className='box_card2 deadclick' title='Coming Soon'>
           <img src={Img5} alt="Img5" />
           <h1>Hyderabad</h1>
         </div>
@@ -81,9 +81,9 @@ function Starter() {
               <h1>Save Time Save Money</h1>
               <h3>Sing up and we'll send the best deals to you</h3>
             </div>
-            <div className='footerbtn'>
-            <input type="text" placeholder='your email address' id="inputmail" className='deadclick'/>
-            <input type="submit" value="Subscribe" id='footerbtn' className='deadclick'/>
+            <div className='footerbtn' title='Coming Soon'>
+            <input type="text" placeholder='your email address' id="inputmail" className='deadclick' readOnly/>
+            <input type="submit" value="Subscribe" id='footerbtn' className='deadclick' readOnly/>
             </div>
           </div>
 

@@ -12,27 +12,27 @@ function International() {
 
       <main className='inter_container'>
 
-        <div className='card'>
+        <div className='card deadclick deadclick' title='Coming Soon'>
           <img src={bangkok} alt="bangkok" className='img'/>
           <h3 className='des_place'>Bankok</h3>
           <p className='des_date'>Dec 18-Dec 25.Round trip</p>
         </div>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
           <img src={dubai} alt="dubai" className='img' />
           <h3 className='des_place'>Dubai</h3>
           <p className='des_date'>Dec 15-Dec 22.Round trip</p>
         </div>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
           <img src={jeddah} alt="jeddah" className='img' />
           <h3 className='des_place'>Jeddah</h3>
           <p className='des_date'>Dec 19-Dec 26.Round trip</p>
         </div>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
           <img src={london} alt="london" className='img' />
           <h3 className='des_place'>London</h3>
           <p className='des_date'>Dec 18-Dec 25.Round trip</p>
         </div>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
           <img src={newyork} alt="newyork" className='img' />
           <h3 className='des_place'>New York</h3>
           <p className='des_date'>Dec 18-Dec 25.Round Trip</p>

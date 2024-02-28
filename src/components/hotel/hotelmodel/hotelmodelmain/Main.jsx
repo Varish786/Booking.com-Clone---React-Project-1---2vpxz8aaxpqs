@@ -38,7 +38,7 @@ function Main({ data }) {
 
                     <div className='subleft2'>
                         <FontAwesomeIcon icon={faLocationDot} />
-                        <p>{location} <span><a href="" className='deadclick'>Show  Map</a></span></p>
+                        <p>{location} <span title='Coming Soon'><a href="" className='deadclick'>Show  Map</a></span></p>
                     </div>
 
                     <div className='subleft3'>
@@ -51,12 +51,12 @@ function Main({ data }) {
                 <div className='rightmain'>
 
                     <div className='subright1'>
-                        <FontAwesomeIcon icon={faHeart}  className='heartlogo'/>
-                        <FontAwesomeIcon icon={faShareNodes}  className='heartlogo'/>
+                        <FontAwesomeIcon icon={faHeart}  className='heartlogo deadclick' title='Coming Soon'/>
+                        <FontAwesomeIcon icon={faShareNodes}  className='heartlogo deadclick' title='Coming Soon'/>
                         <button className='btnreserve' onClick={HandelReserve}>Reserve</button>
                     </div>
 
-                    <div className='subright2'>
+                    <div className='subright2 deadclick' title='Coming Soon'>
                         <FontAwesomeIcon icon={faTag} />
                         <p>We Price Match</p>
                     </div>

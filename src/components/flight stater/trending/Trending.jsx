@@ -15,30 +15,30 @@ function Trending() {
       </div>
 
       <main className='trend_container'>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
           <img src={newyork} alt="newyork" className='img' />
           <h3 className='des_place'>New York, USA</h3>
           <p className='des_date'>Dec 18-Dec 25.Round trip</p>
         </div>
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
         <img src={dehradun} alt="dehradun" className='img' />
         <h3 className='des_place'>Dehradun, India</h3>
         <p className='des_date'>Dec 18-Dec 25.Round trip</p>
       </div>
 
-        <div className='card'>
+        <div className='card deadclick' title='Coming Soon'>
         <img src={newdelhi} alt="newdelhi" className='img' />
         <h3 className='des_place'>New Delhi, India</h3>
         <p className='des_date'>Dec 18-Dec 25.Round Trip</p>
       </div>
 
-      <div className='card'>
+      <div className='card deadclick' title='Coming Soon'>
         <img src={kolkata} alt="kolkata" className='img' />
         <h3 className='des_place'>Kolkata, India</h3>
         <p className='des_date'>Dec 18-Dec 25.Round trip</p>
       </div>
 
-      <div className='card'>
+      <div className='card deadclick' title='Coming Soon'>
           <img src={london} alt="london" className='img' />
           <h3 className='des_place'>London, UK</h3>
           <p className='des_date'>Dec 18-Dec 25.Round trip</p>

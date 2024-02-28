@@ -60,12 +60,12 @@ function Hotelmodel() {
           <p className='hotelname'>{databyid.name}</p>
         </div>
 
-        <div className='container_nav_btn'>
-          <button className='btn'><FontAwesomeIcon icon={faTag} /> We Price Match</button>
-          <button className='btn'>Info&prices</button>
-          <button className='btn'>Facilities</button>
-          <button className='btn'>House rules</button>
-          <button className='btn'>Guest reviews(42)</button>
+        <div className='container_nav_btn' title='Coming Soon'>
+          <button className='btn deadclick'><FontAwesomeIcon icon={faTag} /> We Price Match</button>
+          <button className='btn deadclick'>Info&prices</button>
+          <button className='btn deadclick'>Facilities</button>
+          <button className='btn deadclick'>House rules</button>
+          <button className='btn deadclick'>Guest reviews(42)</button>
         </div>
 
         <div className='main_model_data'>

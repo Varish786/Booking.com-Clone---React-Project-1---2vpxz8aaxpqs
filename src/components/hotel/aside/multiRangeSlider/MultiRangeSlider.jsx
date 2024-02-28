@@ -55,6 +55,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
         }}
         className="thumb thumb--left"
         style={{ zIndex: minVal > max - 100 && "5" }}
+        disabled
       />
       <input
         type="range"
@@ -67,6 +68,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
           maxValRef.current = value;
         }}
         className="thumb thumb--right"
+        disabled
       />
 
       <div className="slider">

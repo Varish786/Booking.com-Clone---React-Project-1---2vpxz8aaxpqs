@@ -7,10 +7,11 @@ function GoogleMap() {
          const lat=28.7041;
          const lon=77.1025;
          iframeRef.src=`https://maps.google.com/maps?q=${lat},${lon}&h1=es;&output=embed`;
+        
     },[])
 
     return (
-        <div>
+        <div title='Coming Soon'>
             <iframe id="googlemap"></iframe>
         </div>
     )

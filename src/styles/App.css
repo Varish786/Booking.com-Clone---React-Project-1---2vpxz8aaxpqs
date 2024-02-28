@@ -1,3 +1,9 @@
 .deadclick{
-    cursor:not-allowed;
+    cursor:not-allowed !important;
 }
+
+
+
+/* disabled
+title='coming Soon' */
+

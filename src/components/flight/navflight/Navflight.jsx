@@ -60,8 +60,8 @@ function Navflight() {
         <>
         <section className='nav_container'>
             <div className='nav_main'>
-                <div className='roundtrip'>
-                    <input type="radio" name='trip' className='input_radio'/>
+                <div className='roundtrip' title='Coming Soon'>
+                    <input type="radio" name='trip' className='input_radio deadclick'/>
                     <label htmlFor='roundtrip' className='fullspace'>Round trip</label>
                 </div>
 
@@ -70,13 +70,13 @@ function Navflight() {
                     <label htmlFor="One way" className='fullspace'>One way</label>
                 </div>
 
-                <div className='multicity'>
-                    <input type="radio" name='trip' className='input_radio' />
+                <div className='multicity' title='Coming Soon'>
+                    <input type="radio" name='trip' className='input_radio deadclick' />
                     <label htmlFor="Multi-city" className='fullspace'>Multi-city</label>
                 </div>
 
-                <div className='selection_drive' onClick={() => setoptionspop(false)}>
-                    <select name='triplist' className='selectoption' onChange={handledropdown}>
+                <div className='selection_drive' onClick={() => setoptionspop(false)} title='Coming Soon'>
+                    <select name='triplist' className='selectoption deadclick' onChange={handledropdown}>
                         <option value="Economy">Economy</option>
                         <option value="Premium Economy">Premium Economy</option>
                         <option value="Business">Business</option>
@@ -120,9 +120,9 @@ function Navflight() {
                 </div>
 
 
-                <div className='checkboxflight'>
+                <div className='checkboxflight' title='Coming Soon'>
 
-                    <input type="checkbox" className='input_radio' />
+                    <input type="checkbox" className='input_radio deadclick' />
 
                     <p className='fullspace'>Direct Flight only</p>
                 </div>
