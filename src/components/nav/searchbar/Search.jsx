@@ -92,6 +92,7 @@ function Search({ settitle, search_active, setsearch_active }) {
               moveRangeOnFirstSelection={false}
               ranges={date}
               className="date"
+              minDate={new Date()}
             />
             }
           </div>
