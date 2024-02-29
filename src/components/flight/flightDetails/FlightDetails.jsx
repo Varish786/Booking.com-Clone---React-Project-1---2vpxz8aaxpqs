@@ -28,8 +28,7 @@ function FlightDetails() {
   const { id } = useParams()
   const { traveller } = locflightdetails.state.data
   const { date } = locflightdetails.state.data
-   
-  
+    
   //---------------------API---------------------------------------
   async function handleAPibyID(flightId) {
     try {
@@ -70,10 +69,6 @@ function FlightDetails() {
       ErrorToast("Please select all the seats")
     }
   }
-
-
-
-
 
   return (
     <section className='fdetail_container'>

@@ -76,3 +76,17 @@
     }
   }
 }
+
+
+
+.mainfilter{
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    .one{
+          display: flex;
+          gap: 0.5rem;
+    }
+}

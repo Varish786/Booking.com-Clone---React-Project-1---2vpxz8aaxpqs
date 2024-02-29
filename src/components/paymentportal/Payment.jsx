@@ -62,7 +62,6 @@ function Payment({ setpay, room_data }) {
                             if(res.message==="Booking successful"){
                                 setpay(false)
                                 SuccessToast("Payment Successful")
-                                setindpay(true)
                                 navigate("/trip")
                             }
                         })

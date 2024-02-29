@@ -16,7 +16,7 @@ function FlightCard({ data }) {
   const checkdate = `${dayOfMonth} ${month}`;
 
 
-
+    
   function handleSeeFlightbtn() {
     navigate(`/flights/result_flights/${_id}`, { state: { data: fdata } })
     EditMovies({ ...flightcont, trvel: fdata.traveller.traveler })
