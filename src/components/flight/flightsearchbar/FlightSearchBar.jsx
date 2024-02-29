@@ -21,10 +21,6 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
     },[])
 
 
-    
-    
-
-
     //----------------------------state mention------------------------------------------
     function handleInput(e) {
      
@@ -101,8 +97,8 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
                     <Takeoff />
                     <input type="text" className='inputfrom' placeholder='Where from ?' onChange={handleInput} name="src" value={fdata ? fdata.src : ""} list='fdata'/>
                     <datalist id='fdata'>
-                        {fcode.map((op)=>{
-                             return <option>{op.IATA_code + " "+ op.city_name}</option>
+                        {fcode.map((op,ind)=>{
+                             return <option key={ind}>{op.IATA_code + " "+ op.city_name}</option>
                         })}
                     </datalist>
                       
@@ -124,7 +120,7 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
 
                 <div className='datebox'>
                     {/* <Calender width="25px" height="25px" /> */}
-                    <input type="date" className="input-field  date" onChange={handleInput} name="jsdate" value={fdata ? fdata.jsdate : ""} />
+                    <input type="date" className="input-field  date" onChange={handleInput} name="jsdate" value={fdata ? fdata.jsdate : ""}  min={new Date().toISOString().split('T')[0]}/>
 
                 </div>
 

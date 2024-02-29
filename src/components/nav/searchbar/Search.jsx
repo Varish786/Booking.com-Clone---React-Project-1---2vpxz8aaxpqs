@@ -53,7 +53,7 @@ function Search({ settitle, search_active, setsearch_active }) {
   }
    
   function handleCross(){
-    //handle cross to clean input
+    setlocation({ ...location, hotel: "" })
   }
 
 
