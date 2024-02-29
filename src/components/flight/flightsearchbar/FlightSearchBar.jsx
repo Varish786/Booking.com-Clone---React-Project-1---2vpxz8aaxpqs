@@ -117,7 +117,7 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
                     <input type="text" placeholder='Where to ?' className='inputto' onChange={handleInput} name="dst" value={fdata ? fdata.dst : ""}  list='fdata'/>
                     <datalist id='fdata'>
                         {fcode.map((op)=>{
-                             return <option>{op.IATA_code}</option>
+                             return <option>{op.IATA_code + " "+ op.city_name}</option>
                         })}
                     </datalist>
                 </div>
