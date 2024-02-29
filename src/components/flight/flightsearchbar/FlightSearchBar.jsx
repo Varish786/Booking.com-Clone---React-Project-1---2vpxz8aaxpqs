@@ -1,19 +1,26 @@
-import React, { useContext} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import "../flightsearchbar/Flightsearch.css";
-import { Takeoff, Takeon, Exchange} from "../../asserts/Icons"
+import { Takeoff, Takeon, Exchange } from "../../asserts/Icons"
 import { FlightSeatContext, flightdata } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import { ErrorToast } from "../../paymentportal/Toast"
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import flightcodes from '../../asserts/airports.json'
+
 
 
 
 function FlightSearchBar({ dropdown, options, setoptions }) {
     const { fdata, setfdata } = useContext(flightdata)
-    // const { flightcont, EditMovies } = useContext(FlightSeatContext)
     const navigate = useNavigate()
-
+    const [fcode,setfcode]=useState([])
+    
+    useEffect(()=>{
+        setfcode(flightcodes.airports)
+    },[])
+    
+    
 
 
     //----------------------------state mention------------------------------------------
@@ -69,8 +76,6 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
         })
     }
 
-
-
     return (
         <section className='searchbar_container'>
             <ToastContainer
@@ -91,8 +96,13 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
 
                 <div className='from'>
                     <Takeoff />
-                    <input type="text" className='inputfrom' placeholder='Where from ?' onChange={handleInput} name="src" value={fdata ? fdata.src : ""}/>
-               
+                    <input type="text" className='inputfrom' placeholder='Where from ?' onChange={handleInput} name="src" value={fdata ? fdata.src : ""} list='fdata'/>
+                    <datalist id='fdata'>
+                        {fcode.map((op)=>{
+                             return <option>{op.IATA_code}</option>
+                        })}
+                    </datalist>
+                      
                 </div>
 
                 <div className='exchangebtn' onClick={handelSwap}>
@@ -101,7 +111,12 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
 
                 <div className='to'>
                     <Takeon />
-                    <input type="text" placeholder='Where to ?' className='inputto' onChange={handleInput} name="dst" value={fdata ? fdata.dst : ""} />
+                    <input type="text" placeholder='Where to ?' className='inputto' onChange={handleInput} name="dst" value={fdata ? fdata.dst : ""}  list='fdata'/>
+                    <datalist id='fdata'>
+                        {fcode.map((op)=>{
+                             return <option>{op.IATA_code}</option>
+                        })}
+                    </datalist>
                 </div>
 
                 <div className='datebox'>

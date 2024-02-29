@@ -88,7 +88,7 @@
         margin: 0rem 3rem;
         /* border: 1px solid red; */
         justify-content: space-between;
-        max-width: 78rem;
+        max-width: 83rem;
         gap: 1rem;
 
         @media only screen and (max-width:460px) {
@@ -98,7 +98,7 @@
 
         .box_card {
             position: relative;
-            max-width: 35rem;
+            max-width: 40rem;
             max-height: 20rem;
 
             >img {

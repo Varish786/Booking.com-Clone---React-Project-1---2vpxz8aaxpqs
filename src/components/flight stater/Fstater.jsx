@@ -24,7 +24,7 @@ function Fstater() {
                     <NavLink className='btn inter' to="/flights/int" >International</NavLink>
                 </li>
                 <li className='dom'>
-                    <NavLink className='btn' to="/flights/dom">Domastic</NavLink>
+                    <NavLink className='btn' to="/flights/dom">Domestic</NavLink>
                 </li>
             </ul>
             <hr className="line" />
