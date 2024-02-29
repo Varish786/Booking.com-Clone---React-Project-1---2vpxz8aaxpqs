@@ -19,13 +19,16 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
     useEffect(()=>{
         setfcode(flightcodes.airports)
     },[])
+
+
     
     
 
 
     //----------------------------state mention------------------------------------------
     function handleInput(e) {
-        setfdata((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+     
+        setfdata((prev) => ({ ...prev, [e.target.name]: e.target.value.split(" ")[0] }))
     }
     //-------------------------------------------------------------------------------------
 
@@ -99,7 +102,7 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
                     <input type="text" className='inputfrom' placeholder='Where from ?' onChange={handleInput} name="src" value={fdata ? fdata.src : ""} list='fdata'/>
                     <datalist id='fdata'>
                         {fcode.map((op)=>{
-                             return <option>{op.IATA_code}</option>
+                             return <option>{op.IATA_code + " "+ op.city_name}</option>
                         })}
                     </datalist>
                       
