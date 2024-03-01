@@ -64,7 +64,10 @@
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                 @media only screen and (max-width:645px){
-                    top: 6rem;
+                    top: 6rem !important;
+               }
+                @media only screen and (max-width:361px){
+                    top: 6rem !important;
                }
             }
             .options_nav{
