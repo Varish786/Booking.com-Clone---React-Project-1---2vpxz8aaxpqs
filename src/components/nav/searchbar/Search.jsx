@@ -100,9 +100,11 @@ function Search({ settitle, search_active, setsearch_active }) {
 
           <div className="box">
             <Person width="22.3px" height="25px" />
+            <div className='subbox'>
             <span onClick={() => setoptionspop(!optionspop)} className='room'>{options.adult} Adult . {options.children} Children . {options.rooms} Room</span>
             <div onClick={() => setoptionspop(!optionspop)} className='downrow'>
               <DownArrow />
+            </div>
             </div>
 
             {optionspop &&

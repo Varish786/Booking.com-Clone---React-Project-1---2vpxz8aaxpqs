@@ -92,9 +92,18 @@ const handleSort=(e)=>{
           </div>
           {/* --------------------API Call------------------------------------------------ */}
           <div className='div_card'>
-          {fapidata.length>0 && fapidata.map((res)=>{
+
+          {
+          fapidata.length>0 ?
+          <>
+          {
+          fapidata.map((res)=>{
                      return <FlightCard data={res} key={res._id}/>
             })
+          }
+           </>
+           :
+           <h1 className='nodata'>No any flights try for different</h1>
           } 
       
           </div>

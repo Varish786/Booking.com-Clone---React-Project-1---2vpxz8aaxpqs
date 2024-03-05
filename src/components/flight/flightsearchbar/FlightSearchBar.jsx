@@ -29,11 +29,12 @@ function FlightSearchBar({ dropdown, options, setoptions }) {
     //-------------------------------------------------------------------------------------
 
     function handleSearchFlight() {
-
+        // console.log("src",fdata);
         const { src, dst, jsdate } = fdata;
-        if (src) {
-            if (dst) {
-                if (jsdate) {
+         
+        if (fdata.src) {
+            if (fdata.dst) {
+                if (fdata.jsdate) {
 
                     const myDate = new Date(fdata.jsdate)
                     const dayOfWeek = myDate.toLocaleDateString('en-US', { weekday: 'short' });

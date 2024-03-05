@@ -25,6 +25,7 @@ function Trip() {
             setloading(true)
             const res = await axios.get("https://academics.newtonschool.co/api/v1/bookingportals/booking", config);
 
+        //-----------------------filter---------------------------------------
             let dd = res.data.data.filter((data) => {
                 if (fil[data.booking_type]) {
                     return data
@@ -36,6 +37,7 @@ function Trip() {
             } else {
                 settripdata(res.data.data)
             }
+        //----------------------------------------------------------------
 
         } catch (err) {
             throw ("trip", err)

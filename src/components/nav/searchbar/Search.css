@@ -29,7 +29,7 @@
             height: 45px;
             width: 20rem;
             padding-left: 20px;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             z-index: 2;
 
@@ -38,6 +38,13 @@
                 z-index:initial;
             }
            
+
+            .subbox{
+                display: flex;
+
+                align-items: center;
+                gap: 0.5rem;
+            }
 
             .inputbox {
                 border: none;

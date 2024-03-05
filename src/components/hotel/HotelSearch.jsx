@@ -106,9 +106,18 @@ function HotelSearch() {
            }
           <div className='eachcard'>
             {
-              hoteldata_api.length > 0 && hoteldata_api.map((res_data) => {
+              hoteldata_api.length > 0  ?
+             
+              <>
+              {
+              hoteldata_api.map((res_data) => {
                 return <Hotelcard data={res_data} key={res_data._id} />
               })
+              }
+              </>
+              :
+              <h1 className='nofound'>No Hotels Found Try Different</h1>
+
             }
           </div>
           </>

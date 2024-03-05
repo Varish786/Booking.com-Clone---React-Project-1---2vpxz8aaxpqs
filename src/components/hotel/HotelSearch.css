@@ -11,6 +11,8 @@
     .cardcontainer {
         padding: 0rem 1rem;
         padding-bottom: 1rem;
+        width: 100%;
+        /* text-align: center; */
 
         .headinghotel {
             max-width: 67rem;
@@ -36,5 +38,14 @@
             }
         }
 
+        .eachcard{
+            .nofound{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+
     }
 }
+
+
