@@ -50,8 +50,13 @@ function Login() {
             }
         }
         catch (err) {
-            console.log("err",err)
-            setsierror(err.response.data.message);
+            if(err.response){
+                setsierror(err.response.data.message);
+                
+            }else{
+                setsierror(err.message);
+            }
+            
         }
 
     }
