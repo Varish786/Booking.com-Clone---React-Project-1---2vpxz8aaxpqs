@@ -28,7 +28,7 @@ function Login() {
             const token = res.data.token;
             const { name, email } = res.data.data;
             if (token) {
-
+            
                 sessionStorage.setItem("userToken", token);
                 sessionStorage.setItem("user", JSON.stringify({ name, email }));
 
@@ -50,7 +50,8 @@ function Login() {
             }
         }
         catch (err) {
-            setsierror(err);
+            console.log("err",err)
+            setsierror(err.response.data.message);
         }
 
     }
