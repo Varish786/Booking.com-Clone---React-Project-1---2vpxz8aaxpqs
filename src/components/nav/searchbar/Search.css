@@ -33,6 +33,10 @@
             align-items: center;
             z-index: 2;
 
+            @media only screen and (max-width:1106px){
+                width: 100%;
+                z-index:initial;
+            }
             @media only screen and (max-width:645px){
                 width: 100%;
                 z-index:initial;
@@ -127,6 +131,9 @@
             outline: none;
             border: none;
             cursor: pointer;
+            @media only screen and (max-width:1106px){
+                width: 100%;
+         }
             @media only screen and (max-width:645px){
                 width: 100%;
          }
